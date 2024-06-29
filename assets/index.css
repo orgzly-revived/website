@@ -1,0 +1,77 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Enable vertical scroll bar always, to avoid page jump */
+    overflow-y: scroll;
+
+    padding-bottom: 120px;
+}
+
+.navbar {
+    background-color: #546E7A;
+    /* background-color: #24292f; */
+}
+
+.store-link-badge {
+    max-width: 240px;
+    width:100%;
+}
+
+.footer {
+    background-color: #f6f8fa;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+
+    display: flex;
+    align-items: center;
+}
+
+/*
+ * docs
+ */
+
+/* Don't display "Table of Contents" */
+#page-docs #table-of-contents h2 {
+    display: none;
+}
+
+/* Don't underline links. */
+#page-docs #table-of-contents a {
+    text-decoration: none;
+
+    /* TODO: Clean generated changelog - remove space before title, then remove this */
+}
+
+/*
+ * changelog
+ */
+
+/* Version */
+#page-changelog h2 {
+    margin-bottom: 20px;
+}
+
+/* Items for a version */
+#page-changelog .outline-2 ul.org-ul {
+    margin-bottom: 30px
+}
+
+/* Spacing between list items */
+#page-changelog .outline-2 ul.org-ul li {
+    margin-top: 8px;
+}
+
+/* "Join Beta" */
+#page-changelog small a {
+    color: gray;
+}
+
+#page-changelog .badge {
+    margin-right: 4px;
+}

@@ -1,0 +1,1033 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta content='Notes and to-do list outliner for Android. Notebooks in org mode format, synced with a directory on your mobile device, Dropbox, or WebDAV.' name='description'>
+
+    <title>Orgzly | Notes &amp; To-Do Lists</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="/assets/index.css">
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container align-items-center">
+        <a class="navbar-brand" href="/"><img src="assets/logo.svg" alt="Orgzly" width="24" /></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+            </ul>
+
+            <ul class="navbar-nav ms-auto">
+                <li><a class="nav-link" href="/docs">Documentation</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="page-docs" class="container">
+    <div class="row mt-5">
+        <div class="col">
+            <h1 class="display-4">Documentation</h1>
+            <p class="lead">A bit of Everything</p>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col">
+            <div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#synchronization">Syncing Notebooks</a>
+<ul>
+<li><a href="#72c5baa">Repository Types</a>
+<ul>
+<li><a href="#sync-repo-dropbox">Dropbox</a></li>
+<li><a href="#sync-repo-webdav">WebDAV</a></li>
+<li><a href="#sync-repo-directory">Directory (local storage)</a></li>
+</ul>
+</li>
+<li><a href="#9a103af">Status Messages</a>
+<ul>
+<li><a href="#3a30eae">No change</a></li>
+<li><a href="#c005876">Saved to URL</a></li>
+<li><a href="#77c53bc">Loaded from URL</a></li>
+<li><a href="#0eb6241">Notebook has no link and one or more remote notebooks with the same name exist</a></li>
+<li><a href="#4268ee7">Notebook has no link and multiple repositories exist</a></li>
+<li><a href="#both-local-and-remote-notebook-have-been-modified">Both local and remote notebook have been modified</a>
+<ul>
+<li><a href="#cd5aaec">Manually merging the two, conflicting files when using Dropbox</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org-mode">Notes for Org mode users</a>
+<ul>
+<li><a href="#d25f20c">Generated Org files</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#links">Links</a>
+<ul>
+<li><a href="#6874100">Web page</a></li>
+<li><a href="#21a1d14">Email</a></li>
+<li><a href="#0630ac2">Telephone number</a></li>
+<li><a href="#93214ea">Location</a></li>
+<li><a href="#a7a9f79">File</a></li>
+<li><a href="#33542dd">Note</a></li>
+<li><a href="#9d5f3b9">Notebook</a></li>
+</ul>
+</li>
+<li><a href="#search">Search</a>
+<ul>
+<li><a href="#search-expressions">Search expressions</a></li>
+<li><a href="#search-sorting">Sorting</a></li>
+<li><a href="#search-agenda">Agenda</a></li>
+<li><a href="#search-examples">Examples</a></li>
+<li><a href="#b0b0976">Search Results</a></li>
+</ul>
+</li>
+<li><a href="#faq">FAQ</a>
+<ul>
+<li><a href="#cost">How much does it cost?</a></li>
+<li><a href="#source-code">Is the source code available?</a></li>
+<li><a href="#96f0fcb">I don't use Google Play, any alternatives?</a></li>
+<li><a href="#f695589">Dropbox sync option is missing</a></li>
+<li><a href="#ios">Is there an iOS version?</a></li>
+</ul>
+</li>
+<li><a href="#privacy">Privacy Policy</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-synchronization" class="outline-2">
+<h2 id="synchronization">Syncing Notebooks</h2>
+<div class="outline-text-2" id="text-synchronization">
+<p>
+You can store your notebooks on Dropbox or sync them with a directory
+on your device.
+</p>
+
+<p>
+Notebooks are written as plain text files in <a href="https://orgmode.org">Org mode</a> file format.
+</p>
+
+<p>
+Synchronization is currently manual &#x2013; you have to initiate it
+yourself by clicking the <code>Sync</code> button. Button is located in the
+navigation drawer.
+</p>
+
+<p>
+Note that Orgzly doesn't yet detect deletion of remote notebooks. If
+you delete a notebook in the repository it will be restored after sync
+(unless you deleted it in the app as well).
+</p>
+</div>
+
+<div id="outline-container-72c5baa" class="outline-3">
+<h3 id="72c5baa">Repository Types</h3>
+<div class="outline-text-3" id="text-72c5baa">
+</div>
+<div id="outline-container-sync-repo-dropbox" class="outline-4">
+<h4 id="sync-repo-dropbox">Dropbox</h4>
+<div class="outline-text-4" id="text-sync-repo-dropbox">
+<p>
+The Dropbox app is not required for syncing, instead you will allow
+Orgzly to contact Dropbox on your behalf using the browser.
+</p>
+
+<ul class="org-ul">
+<li>Go to <code>Settings</code></li>
+<li>Click on <code>Sync</code></li>
+<li>Click on <code>Repositories</code></li>
+<li>Click on <code>Dropbox</code> (if you already have some repositories, click the plus icon first)</li>
+<li>Enter the directory inside Dropbox (without "Dropbox" part)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sync-repo-webdav" class="outline-4">
+<h4 id="sync-repo-webdav">WebDAV</h4>
+<div class="outline-text-4" id="text-sync-repo-webdav">
+<p>
+You can sync your notebooks over WebDAV with any service that supports
+it, such as <a href="https://nextcloud.com/">Nextcloud</a>, for example.
+</p>
+
+<ul class="org-ul">
+<li>Go to <code>Settings</code></li>
+<li>Click on <code>Sync</code></li>
+<li>Click on <code>Repositories</code></li>
+<li>Click on <code>WebDAV</code> (if you already have some repositories, click the plus icon first)</li>
+<li>Enter the URL, username and password</li>
+</ul>
+
+<p>
+Optionally, if the server is using a self-signed certificate for
+example, you could add it here.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sync-repo-directory" class="outline-4">
+<h4 id="sync-repo-directory">Directory (local storage)</h4>
+<div class="outline-text-4" id="text-sync-repo-directory">
+<p>
+Notebooks can be synced with one or more directories on your device.
+</p>
+
+<ul class="org-ul">
+<li>Go to <code>Settings</code></li>
+<li>Click on <code>Sync</code></li>
+<li>Click on <code>Repositories</code></li>
+<li>Click on <code>Directory</code> (if you already have some repositories, click the plus icon first)</li>
+<li>Click <code>Browse</code> and select (or create new) directory</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-9a103af" class="outline-3">
+<h3 id="9a103af">Status Messages</h3>
+<div class="outline-text-3" id="text-9a103af">
+<p>
+After syncing is done, every notebook will have its sync status
+message updated.
+</p>
+</div>
+
+<div id="outline-container-3a30eae" class="outline-4">
+<h4 id="3a30eae">No change</h4>
+<div class="outline-text-4" id="text-3a30eae">
+<p>
+Notebook is already synced. Nothing to do.
+</p>
+</div>
+</div>
+
+<div id="outline-container-c005876" class="outline-4">
+<h4 id="c005876">Saved to URL</h4>
+<div class="outline-text-4" id="text-c005876">
+<p>
+Notebook has been successfully synced by being saved to the repository
+represented by URL.
+</p>
+</div>
+</div>
+
+<div id="outline-container-77c53bc" class="outline-4">
+<h4 id="77c53bc">Loaded from URL</h4>
+<div class="outline-text-4" id="text-77c53bc">
+<p>
+Notebook has been successfully synced by being loaded from the
+notebook represented by URL.
+</p>
+</div>
+</div>
+
+<div id="outline-container-0eb6241" class="outline-4">
+<h4 id="0eb6241">Notebook has no link and one or more remote notebooks with the same name exist</h4>
+<div class="outline-text-4" id="text-0eb6241">
+<p>
+Orgzly doesn't know which remote notebook to use for syncing.
+</p>
+
+<p>
+Each notebook must have a link to a remote notebook. Link is
+usually set automatically after the first sync. However, there are
+cases when this is not possible, or when the link is removed.
+</p>
+
+<p>
+Link cannot be created after the first sync if:
+</p>
+
+<ul class="org-ul">
+<li>Notebook was created in Orgzly, but there is already a remote
+notebook with the same name in one of the repositories</li>
+<li>Multiple repositories are used and there is a notebook with the same
+name in them</li>
+</ul>
+
+<p>
+Link is removed when:
+</p>
+
+<ul class="org-ul">
+<li>Repository is renamed or deleted</li>
+</ul>
+
+<p>
+Link can be set manually:
+</p>
+
+<ul class="org-ul">
+<li>Open the list of notebooks ("Notebooks")</li>
+<li>Long-click on a notebook</li>
+<li>Click on <code>Set Link</code></li>
+<li>Choose a repository</li>
+<li>Click <code>Set</code></li>
+</ul>
+
+<p>
+Link is set if you can see the URL next to the small link icon in
+notebook's details.
+</p>
+</div>
+</div>
+
+<div id="outline-container-4268ee7" class="outline-4">
+<h4 id="4268ee7">Notebook has no link and multiple repositories exist</h4>
+<div class="outline-text-4" id="text-4268ee7">
+<p>
+See <a href="#0eb6241">Notebook has no link and one or more remote notebooks with the same name exist</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-both-local-and-remote-notebook-have-been-modified" class="outline-4">
+<h4 id="both-local-and-remote-notebook-have-been-modified">Both local and remote notebook have been modified</h4>
+<div class="outline-text-4" id="text-both-local-and-remote-notebook-have-been-modified">
+<p>
+If you modify a notebook in Orgzly and at the same time (before
+performing a sync) you modify its linked remote notebook, next sync
+will leave the notebook in a conflicted state.
+</p>
+
+<p>
+When notebook is not synced due to conflict, you have two options:
+</p>
+
+<ul class="org-ul">
+<li><code>Force Load</code> to import remote notebook and overwrite the local version</li>
+<li><code>Force Save</code> to export local notebook and overwrite the remote version</li>
+</ul>
+
+<p>
+These actions are available in notebook's contextual menu:
+</p>
+
+<ul class="org-ul">
+<li>Open the list of notebooks ("Notebooks")</li>
+<li>Long-click on a notebook to open the menu</li>
+</ul>
+
+<p>
+There is currently no other way to resolve a conflict within Orgzly itself.
+</p>
+</div>
+
+<div id="outline-container-cd5aaec" class="outline-5">
+<h5 id="cd5aaec">Manually merging the two, conflicting files when using Dropbox</h5>
+<div class="outline-text-5" id="text-cd5aaec">
+<p>
+When the local and remote notebooks have been modified in a Dropbox
+repository you can take advantage of the facts that Orgzly stores
+information in text files (in the Org file format) and that Orgzly
+will create a new copy of the file if you remove it from Dropbox.
+</p>
+
+<p>
+For example, you might move the original, underlying .org file in
+Dropbox to a different directory, then tell Orgzly to sync the files
+again (which will cause Orgzly to create a new file (with the same
+file name)).  You can then use an external tool (such as a diff
+program) to compare your original file and the file that Orgzly
+created.  You can then determine what changes were made, and which
+ones you wish to keep.
+</p>
+
+<p>
+Be sure to remember that the new file (the one created by Orgzly) is
+where you want to put your final, merged version of the file.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org-mode" class="outline-3">
+<h3 id="org-mode">Notes for Org mode users</h3>
+<div class="outline-text-3" id="text-org-mode">
+<p>
+Notebooks are encoded in <a href="https://orgmode.org">Org mode</a> file format.
+</p>
+</div>
+
+<div id="outline-container-d25f20c" class="outline-4">
+<h4 id="d25f20c">Generated Org files</h4>
+<div class="outline-text-4" id="text-d25f20c">
+<p>
+When compared to your original Org files, files generated by Orgzly
+might differ in the amount of white space, outlined below. Any other
+difference would be considered a serious bug.
+</p>
+
+<ul class="org-ul">
+<li><i>By default, tags are separated from the title with a single space
+character.</i> You will lose your tags' indentation as if you had
+<code>org-tags-column</code> set to <code>0</code>.
+
+<ul class="org-ul">
+<li>You can set <code>Tags column</code> in the app's preferences (under
+<code>Settings / Sync / Org file format / Tags indentation</code>), which
+should behave just like <code>org-tags-column</code>.</li>
+
+<li>There is also a preference to make <code>Tags column</code> output compatible
+with <code>org-indent-mode</code>.</li>
+</ul></li>
+
+<li><i>Unsupported metadata below header is part of note's content.</i> As
+soon as any unsupported metadata is encountered, lines from that point
+until the next heading are considered part of note's content.  You
+might find an unexpected new line between supported and unsupported
+metadata, because note's content is normally separated from heading
+by a new line.</li>
+</ul>
+
+<p>
+If any of this is not working for you, please <a href="#contact">contact</a> us.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-links" class="outline-2">
+<h2 id="links">Links</h2>
+<div class="outline-text-2" id="text-links">
+<p>
+Links can be used in note's title or content. Links can be enclosed in
+brackets (e.g. <code>[[link]]</code>). You can specify a name which will be displayed
+instead of the link (e.g. <code>[[link][name]]</code>).
+</p>
+</div>
+
+<div id="outline-container-6874100" class="outline-3">
+<h3 id="6874100">Web page</h3>
+<div class="outline-text-3" id="text-6874100">
+<p>
+<code>https://www.orgzly.com</code>
+</p>
+</div>
+</div>
+
+<div id="outline-container-21a1d14" class="outline-3">
+<h3 id="21a1d14">Email</h3>
+<div class="outline-text-3" id="text-21a1d14">
+<p>
+<code>mailto:support@orgzly.com</code>
+</p>
+</div>
+</div>
+
+<div id="outline-container-0630ac2" class="outline-3">
+<h3 id="0630ac2">Telephone number</h3>
+<div class="outline-text-3" id="text-0630ac2">
+<p>
+You can dial a phone number, compose SMS or MMS.
+</p>
+
+<ul class="org-ul">
+<li><code>tel:1-800-555-0199</code></li>
+<li><code>voicemail:1-800-555-0199</code></li>
+<li><code>sms:1-800-555-0199</code></li>
+<li><code>sms:1-800-555-0199?body=omw%20brt</code></li>
+<li><code>smsto:1-800-555-0199</code></li>
+<li><code>mms:1-800-555-0199</code></li>
+<li><code>mmsto:1-800-555-0199</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-93214ea" class="outline-3">
+<h3 id="93214ea">Location</h3>
+<div class="outline-text-3" id="text-93214ea">
+<p>
+To open a map you can specify the exact location or a search query.
+</p>
+
+<ul class="org-ul">
+<li><code>geo:40.7128,-74.0060</code></li>
+<li><code>geo:0,0?q=new+york+city</code></li>
+<li><code>geo:40.7128,-74.0060?z=11</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-a7a9f79" class="outline-3">
+<h3 id="a7a9f79">File</h3>
+<div class="outline-text-3" id="text-a7a9f79">
+<p>
+Links to external files are supported.
+</p>
+
+<p>
+Files are <b>relative to the main storage directory</b> (e.g. <code>/sdcard</code>).
+</p>
+
+<ul class="org-ul">
+<li><code>file:Download/document.txt</code></li>
+<li><code>file:Music/song.mp3</code></li>
+</ul>
+
+<p>
+In Settings, you can change the relative root to point to any directory on your
+device. There is one setting to set the root for absolute links (e.g. <code>file:/readme.txt</code>),
+and another setting to set the root for relative links (e.g. <code>file:readme.txt</code>).
+</p>
+</div>
+</div>
+
+<div id="outline-container-33542dd" class="outline-3">
+<h3 id="33542dd">Note</h3>
+<div class="outline-text-3" id="text-33542dd">
+<p>
+Linking to notes is done using properties. Two properties are supported &#x2013; <code>ID</code> and
+<code>CUSTOM_ID</code>.
+</p>
+
+<p>
+If you set note's property <code>ID</code> to
+<code>123e4567-e89b-12d3-a456-426655440000</code> you can link to the note using:
+</p>
+
+<p>
+<code>id:123e4567-e89b-12d3-a456-426655440000</code>
+</p>
+
+<p>
+Value can be anything, but <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</a> is recommended.
+</p>
+
+<p>
+If you prefer a more user-friendly value, use <code>CUSTOM_ID</code>
+property. This type of link starts with <code>#</code> character, followed by the
+property value. It must be enclosed in brackets. If you set
+<code>CUSTOM_ID</code> to <code>Meeting checklist</code>, linking to that note is done
+using:
+</p>
+
+<p>
+<code>[[#Meeting checklist]]</code>
+</p>
+</div>
+</div>
+
+<div id="outline-container-9d5f3b9" class="outline-3">
+<h3 id="9d5f3b9">Notebook</h3>
+<div class="outline-text-3" id="text-9d5f3b9">
+<p>
+Link to a notebook within the app looks like a link to an external file:
+</p>
+
+<p>
+<code>file:gtd.org</code>
+</p>
+
+<p>
+Only the name matters and it has to be the same as the notebook you
+are linking to.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-search" class="outline-2">
+<h2 id="search">Search</h2>
+<div class="outline-text-2" id="text-search">
+<p>
+Search expressions are separated with space.
+</p>
+
+<p>
+They are implicitly joined by logical <code>AND</code>. <code>OR</code> operator is also
+supported. Both operators are case insensitive. <code>AND</code> has higher
+precedence than <code>OR</code>.
+</p>
+</div>
+
+<div id="outline-container-search-expressions" class="outline-3">
+<h3 id="search-expressions">Search expressions</h3>
+<div class="outline-text-3" id="text-search-expressions">
+<p>
+Following search expressions are supported.
+</p>
+
+<p>
+Some of them support <code>.</code> (NOT) operator (see the last column).
+</p>
+
+<table class="table table-sm">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Expression</th>
+<th scope="col" class="org-left">Finds notes</th>
+<th scope="col" class="org-left">Example</th>
+<th scope="col" class="org-left">.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>s.PERIOD</code></td>
+<td class="org-left">Scheduled within period</td>
+<td class="org-left"><code>s.today</code></td>
+<td class="org-left">N</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>d.PERIOD</code></td>
+<td class="org-left">Deadline within period</td>
+<td class="org-left"><code>d.le.2d</code></td>
+<td class="org-left">N</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>e.PERIOD</code></td>
+<td class="org-left">Event within period</td>
+<td class="org-left"><code>e.ge.now</code></td>
+<td class="org-left">N</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>c.PERIOD</code></td>
+<td class="org-left">Closed within period</td>
+<td class="org-left"><code>c.yesterday</code></td>
+<td class="org-left">N</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>cr.PERIOD</code></td>
+<td class="org-left">Created within period</td>
+<td class="org-left"><code>cr.ge.yesterday</code></td>
+<td class="org-left">N</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>i.STATE</code></td>
+<td class="org-left">With state</td>
+<td class="org-left"><code>i.todo</code></td>
+<td class="org-left">Y</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>it.STATE-TYPE</code></td>
+<td class="org-left">With state type</td>
+<td class="org-left"><code>.it.done</code></td>
+<td class="org-left">Y</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>b.NOTEBOOK</code></td>
+<td class="org-left">From notebook</td>
+<td class="org-left"><code>.b.Work</code></td>
+<td class="org-left">Y</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>t.TAG</code></td>
+<td class="org-left">With tag (inherited too)</td>
+<td class="org-left"><code>t.errand</code></td>
+<td class="org-left">Y</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>tn.TAG</code></td>
+<td class="org-left">With tag (note's only)</td>
+<td class="org-left"><code>tn.toRead</code></td>
+<td class="org-left">Y</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>p.PRIORITY</code></td>
+<td class="org-left">Having priority</td>
+<td class="org-left"><code>.p.c</code></td>
+<td class="org-left">Y</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>ps.PRIORITY</code></td>
+<td class="org-left">Having set priority</td>
+<td class="org-left"><code>ps.b</code></td>
+<td class="org-left">Y</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<code>PERIOD</code> can be:
+</p>
+
+<ul class="org-ul">
+<li><code>OP.TIME</code> &#x2013; matches time</li>
+<li><code>none</code> (or <code>no</code>) &#x2013; matches notes without the property</li>
+</ul>
+
+<p>
+<code>OP</code> can be:
+</p>
+<ul class="org-ul">
+<li><code>eq</code> &#x2013; equal to <code>TIME</code></li>
+<li><code>ne</code> &#x2013; not equal to <code>TIME</code></li>
+<li><code>lt</code> &#x2013; less than <code>TIME</code></li>
+<li><code>le</code> &#x2013; less than or equal to <code>TIME</code></li>
+<li><code>gt</code> &#x2013; greater than <code>TIME</code></li>
+<li><code>ge</code> &#x2013; greater than or equal to <code>TIME</code></li>
+</ul>
+
+<p>
+If <code>OP</code> is not specified:
+</p>
+<ul class="org-ul">
+<li>Default value for <code>s</code>, <code>d</code> and <code>cr</code> is <code>le</code></li>
+<li>Default value for <code>c</code> is <code>eq</code></li>
+</ul>
+
+<p>
+<code>TIME</code> can be:
+</p>
+<ul class="org-ul">
+<li><code>Nh</code> &#x2013; <code>N</code> hours from now</li>
+<li><code>Nd</code> &#x2013; <code>N</code> days from now</li>
+<li><code>Nw</code> &#x2013; <code>N</code> weeks from now</li>
+<li><code>Nm</code> &#x2013; <code>N</code> months from now</li>
+<li><code>Ny</code> &#x2013; <code>N</code> years from now</li>
+</ul>
+
+<p>
+<code>N</code> can be negative.
+</p>
+
+<p>
+For example:
+</p>
+<ul class="org-ul">
+<li><code>-2h</code> &#x2013; two hours ago</li>
+<li><code>5d</code> &#x2013; five days from today</li>
+<li><code>-2w</code> &#x2013; two weeks ago</li>
+<li><code>3m</code> &#x2013; three months from today</li>
+<li><code>1y</code> &#x2013; one year from today</li>
+</ul>
+
+<p>
+Few aliases for <code>TIME</code> are available:
+</p>
+<ul class="org-ul">
+<li><code>tomorrow</code>, <code>tmrw</code> or <code>tom</code></li>
+<li><code>today</code> or <code>tod</code></li>
+<li><code>now</code></li>
+<li><code>yesterday</code></li>
+</ul>
+
+<p>
+<code>STATE</code> is a keyword like <code>TODO</code>, <code>DONE</code>, <code>NEW</code>, etc. Keywords are
+case insensitive. Only states specified in Settings can be searched
+by. Any keywords not included in the settings are not treated as
+states - they become part of note's title.
+</p>
+
+<p>
+<code>STATE-TYPE</code> can be <code>todo</code>, <code>done</code> or <code>none</code>.
+</p>
+
+<p>
+<code>NOTEBOOK</code> is the name of notebook. It must be surrounded with double
+quotes if it contains spaces.
+</p>
+
+<p>
+<code>TAG</code> is searched as a substring. For example <code>t.bee</code> will find notes
+which are tagged with <code>beeblebrox</code>.
+</p>
+
+<p>
+<code>PRIORITY</code> is a priority starting from <code>A</code>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-search-sorting" class="outline-3">
+<h3 id="search-sorting">Sorting</h3>
+<div class="outline-text-3" id="text-search-sorting">
+<p>
+Default ordering of notes is by notebook name then priority. If <code>s</code> or
+<code>d</code> are used in the query, they are also sorted by scheduled or
+deadline time. They are always sorted by position in the notebook
+last.
+</p>
+
+<p>
+You can change this behavior by using <code>o</code> operator.
+</p>
+
+<p>
+Using <code>o.PROPERTY</code> will sort notes by property. <code>.o.PROPERTY</code> is also
+supported which sorts notes by property in reverse order. You can
+specify multiple operators and they will be used in order.
+</p>
+
+<p>
+Following properties are supported:
+</p>
+
+<table class="table table-sm">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Property</th>
+<th scope="col" class="org-left">Order by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>b</code> <code>book</code> <code>notebook</code></td>
+<td class="org-left">Notebook name</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>t</code> <code>title</code></td>
+<td class="org-left">Title</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>s</code> <code>sched</code> <code>scheduled</code></td>
+<td class="org-left">Scheduled time</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>d</code> <code>dead</code> <code>deadline</code></td>
+<td class="org-left">Deadline time</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>e</code> <code>event</code></td>
+<td class="org-left">Event time</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>c</code> <code>close</code> <code>closed</code></td>
+<td class="org-left">Closed time</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>cr</code> <code>created</code></td>
+<td class="org-left">Created-at time</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>p</code> <code>pri</code> <code>prio</code> <code>priority</code></td>
+<td class="org-left">Priority</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>st</code> <code>state</code></td>
+<td class="org-left">States as defined in Settings</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+When a note contains multiple events, only one of those events is
+considered when sorting. With <code>o.event</code> the oldest event is used. With
+<code>.o.event</code> most recent event is used.
+</p>
+</div>
+</div>
+
+<div id="outline-container-search-agenda" class="outline-3">
+<h3 id="search-agenda">Agenda</h3>
+<div class="outline-text-3" id="text-search-agenda">
+<p>
+You can add <code>ad.DAYS</code> to any query to display search results grouped by day.
+</p>
+
+<p>
+<code>DAYS</code> is a number of days you want to display.
+</p>
+
+<p>
+For example, <code>(t.gym or t.class) ad.3</code> will display notes tagged with
+<code>gym</code> or <code>class</code> with any type of time set within next 3 days.
+</p>
+</div>
+</div>
+
+<div id="outline-container-search-examples" class="outline-3">
+<h3 id="search-examples">Examples</h3>
+<div class="outline-text-3" id="text-search-examples">
+<ul class="org-ul">
+<li><code>i.todo t.john</code> - Search for <code>TODO</code> notes which are tagged with <code>john</code></li>
+<li><code>b.Work .i.done</code> - Search in notebook <code>Work</code> for notes without <code>DONE</code> state</li>
+<li><code>(b.Home or b.Work) phone</code> - Search in notebooks <code>Home</code> and <code>Work</code> for notes which contain the string <code>phone</code> in their title, content or any of the tags</li>
+<li><code>s.1d p.a</code> - Search for priority <code>A</code> notes scheduled for tomorrow or earlier (same as <code>p.a s.tom</code>)</li>
+<li><code>s.ge.today o.book o.pri</code> - Search for notes scheduled for today or later, sorting them by notebook name then priority</li>
+<li><code>o.book o.pri o.s</code> - Sort by notebook name then priority then scheduled time</li>
+<li><code>p.b</code> - Search for notes with priority <code>B</code> (includes notes with no priority if default priority is <code>B</code>)</li>
+<li><code>ps.b</code> - Search for notes with priority set to <code>B</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-b0b0976" class="outline-3">
+<h3 id="b0b0976">Search Results</h3>
+<div class="outline-text-3" id="text-b0b0976">
+<p>
+For each note you can tap on it to edit the note immediately.  For
+each note you can also swipe right to display a menu of options that
+allow you to assign a starting time, cycle through the <code>TODO</code> and
+<code>DONE</code> states, or to simply mark the note as <code>DONE</code>.  If you swipe
+left you'll be given a single option: displaying the note in the
+notebook that contains it.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-faq" class="outline-2">
+<h2 id="faq">FAQ</h2>
+<div class="outline-text-2" id="text-faq">
+</div>
+
+<div id="outline-container-cost" class="outline-3">
+<h3 id="cost">How much does it cost?</h3>
+<div class="outline-text-3" id="text-cost">
+<p>
+Orgzly is free.
+</p>
+</div>
+</div>
+
+<div id="outline-container-source-code" class="outline-3">
+<h3 id="source-code">Is the source code available?</h3>
+<div class="outline-text-3" id="text-source-code">
+<p>
+Yes, source code is available on <a href="https://github.com/orgzly/orgzly-android">GitHub</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-96f0fcb" class="outline-3">
+<h3 id="96f0fcb">I don't use Google Play, any alternatives?</h3>
+<div class="outline-text-3" id="text-96f0fcb">
+<p>
+Orgzly is also available on <a href="https://f-droid.org/app/com.orgzly">F-Droid</a>. Or you can download APK files
+directly from <a href="https://github.com/orgzly/orgzly-android/releases">GitHub releases</a> page.
+</p>
+</div>
+</div>
+
+<div id="outline-container-f695589" class="outline-3">
+<h3 id="f695589">Dropbox sync option is missing</h3>
+<div class="outline-text-3" id="text-f695589">
+<p>
+Are you using F-Droid version? Dropbox is only available in Google
+Play's version of the app.
+</p>
+</div>
+</div>
+
+<div id="outline-container-ios" class="outline-3">
+<h3 id="ios">Is there an iOS version?</h3>
+<div class="outline-text-3" id="text-ios">
+<p>
+No, only Android version is available at the moment.
+</p>
+
+<p>
+After implementing some of the important features which are still
+missing in the current Android version, there is an idea to start
+working on either iOS version or a Web application.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-privacy" class="outline-2">
+<h2 id="privacy">Privacy Policy</h2>
+<div class="outline-text-2" id="text-privacy">
+<p>
+See <a href="https://www.orgzly.com/privacy">Privacy Policy</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-contact" class="outline-2">
+<h2 id="contact">Contact</h2>
+<div class="outline-text-2" id="text-contact">
+<p>
+Email us at <a href="mailto:support@orgzly.com">support@orgzly.com</a> and visit <a href="https://www.orgzly.com">Orgzly.com</a>.
+</p>
+
+<p>
+Follow us on <a href="https://twitter.com/Orgzly">Twitter</a> and <a href="https://www.facebook.com/Orgzly">Facebook</a>.
+</p>
+
+<p>
+Help us localize Orgzly by joining our <a href="https://crowdin.com/project/orgzly">Crowdin project</a>.
+</p>
+</div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container my-3">
+        <div class="row align-items-center">
+            <div class="col text-center">
+                <a class="link-secondary me-4" role="button" href='mailto:support@orgzly.com'><span class="bi-envelope-fill fs-3"></span><span class='visually-hidden'> Email</span></a>
+                <a class="link-secondary mx-4" role="button" href='https://github.com/orgzly'><span class="bi-github fs-3"></span><span class='visually-hidden'> GitHub</span></a>
+                <a class="link-secondary mx-4" role="button" href='https://twitter.com/Orgzly'><span class="bi-twitter fs-3"></span><span class='visually-hidden'> Twitter</span></a>
+                <a class="link-secondary ms-4" role="button" href='https://www.facebook.com/Orgzly'><span class="bi-facebook fs-3"></span><span class='visually-hidden'> Facebook</span></a>
+            </div>
+        </div>
+
+        <div class="row align-items-center mt-3">
+            <div class="col text-center">
+                <a href="/privacy" class="link-secondary text-decoration-none" style="font-size: 0.75rem">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
