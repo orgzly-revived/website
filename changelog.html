@@ -1,0 +1,1082 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta content='Notes and to-do list outliner for Android. Notebooks in org mode format, synced with a directory on your mobile device, Dropbox, or WebDAV.' name='description'>
+
+    <title>Orgzly | Notes &amp; To-Do Lists</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="/assets/index.css">
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container align-items-center">
+        <a class="navbar-brand" href="/"><img src="assets/logo.svg" alt="Orgzly" width="24" /></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+            </ul>
+
+            <ul class="navbar-nav ms-auto">
+                <li><a class="nav-link" href="/docs">Documentation</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="page-changelog" class="container">
+    <div class="row mt-5">
+        <div class="col">
+            <h1 class="display-4">Changelog</h1>
+            <p class="lead">Version history</p>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col">
+            
+<div id="outline-container-v1.8.10" class="outline-2">
+<h2 id="v1.8.10">v1.8.10</h2>
+<div class="outline-text-2" id="text-v1.8.10">
+</div>
+
+<ul class="org-ul">
+<li><a id="8ca22f4"></a><span class="badge bg-danger">FEAT</span> Allow using alarm clock for scheduling reminders with a time of day</li>
+<li><a id="0232ce3"></a><span class="badge bg-danger">FEAT</span> Log and view major events (e.g. scheduling reminders)</li>
+<li><a id="8f9ea2a"></a><span class="badge bg-success">FIX</span> Check for reminders since the last run on boot and data-change</li>
+<li><a id="388b103"></a><span class="badge bg-primary">IMPR</span> Remove edit/view modes from note, single tap to edit and position the cursor correctly</li>
+<li><a id="17b3891"></a><span class="badge bg-primary">IMPR</span> Replace quick menus with popup windows</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.8.9" class="outline-2">
+<h2 id="v1.8.9">v1.8.9</h2>
+<div class="outline-text-2" id="text-v1.8.9">
+</div>
+
+<ul class="org-ul">
+<li><a id="df1b6df"></a><span class="badge bg-danger">FEAT</span> Dynamic color scheme</li>
+<li><a id="09d9a91"></a><span class="badge bg-success">FIX</span> Fix starting sync from the background (e.g. auto-sync or ActionReceiver)</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.8.8" class="outline-2">
+<h2 id="v1.8.8">v1.8.8</h2>
+<div class="outline-text-2" id="text-v1.8.8">
+</div>
+
+<ul class="org-ul">
+<li><a id="5ba6603"></a><span class="badge bg-success">FIX</span> Fix slow sync and app start due to shortcuts refreshing</li>
+<li><a id="145e20e"></a><span class="badge bg-success">FIX</span> Stop using alarm clock for reminders</li>
+<li><a id="67699ea"></a><span class="badge bg-success">FIX</span> Add Sync back to the overflow menu</li>
+<li><a id="4540cf9"></a><span class="badge bg-success">FIX</span> Fix a graphics glitch with a transparent navigation bar on Android 8.1</li>
+<li><a id="cd34461"></a><span class="badge bg-success">FIX</span> Stop hiding the top of the content under the toolbar on the keyboard open</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.8.7" class="outline-2">
+<h2 id="v1.8.7">v1.8.7</h2>
+<div class="outline-text-2" id="text-v1.8.7">
+</div>
+
+<ul class="org-ul">
+<li><a id="9db9d5a"></a><span class="badge bg-danger">FEAT</span> Scroll to the top on action bar click</li>
+<li><a id="bcb577f"></a><span class="badge bg-primary">IMPR</span> Target Android 12L</li>
+<li><a id="e8bd403"></a><span class="badge bg-primary">IMPR</span> Use Material 3</li>
+<li><a id="9f2b125"></a><span class="badge bg-primary">IMPR</span> Use larger agenda dividers with a background color</li>
+<li><a id="38b4030"></a><span class="badge bg-success">FIX</span> Render images, allow using monospaced font and register checkbox changes for notebook preface</li>
+<li><a id="f67918b"></a><span class="badge bg-success">FIX</span> Fix the permission issue when creating a “New note” widget</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.8.6" class="outline-2">
+<h2 id="v1.8.6">v1.8.6</h2>
+<div class="outline-text-2" id="text-v1.8.6">
+</div>
+
+<ul class="org-ul">
+<li><a id="4538664"></a><span class="badge bg-danger">FEAT</span> New “System” color scheme</li>
+<li><a id="fb38b0f"></a><span class="badge bg-primary">IMPR</span> Target Android 11</li>
+<li><a id="4894cb7"></a><span class="badge bg-primary">IMPR</span> WebDAV sync fixes and digest authentication support</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.8.5" class="outline-2">
+<h2 id="v1.8.5">v1.8.5</h2>
+<div class="outline-text-2" id="text-v1.8.5">
+</div>
+
+<ul class="org-ul">
+<li><a id="f1fa800"></a><span class="badge bg-danger">FEAT</span> Support <code>.tn</code> search operator</li>
+<li><a id="7de9adc"></a><span class="badge bg-danger">FEAT</span> Preference to insert new note at the beginning of notebook</li>
+<li><a id="da32fd0"></a><span class="badge bg-danger">FEAT</span> Preference to define root directory for file links</li>
+<li><a id="8c6beab"></a><span class="badge bg-danger">FEAT</span> Gray out notes with <code>ARCHIVE</code> tag</li>
+<li><a id="21b61c9"></a><span class="badge bg-primary">IMPR</span> Support <code>+</code> as a bullet for lists</li>
+<li><a id="9334041"></a><span class="badge bg-primary">IMPR</span> Support “Keep screen on” option in note view</li>
+<li><a id="6933f04"></a><span class="badge bg-primary">IMPR</span> Allow picking directory for saved searches export</li>
+<li><a id="5920ee2"></a><span class="badge bg-success">FIX</span> Fix list continuing on some keyboards</li>
+<li><a id="47aba62"></a><span class="badge bg-success">FIX</span> Handle escaped brackets in links</li>
+<li><a id="5cb0be3"></a><span class="badge bg-success">FIX</span> Few fixes for timestamps without time part set (fix for <code>s.now</code> and reminders)</li>
+<li><a id="67b1145"></a><span class="badge bg-success">FIX</span> Ignore inactive scheduled and deadline times in agenda</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.8.4" class="outline-2">
+<h2 id="v1.8.4">v1.8.4</h2>
+<div class="outline-text-2" id="text-v1.8.4">
+</div>
+
+<ul class="org-ul">
+<li><a id="0f404d7"></a><span class="badge bg-danger">FEAT</span> Sticky agenda headers</li>
+<li><a id="82b7f73"></a><span class="badge bg-danger">FEAT</span> Preference for time for daily reminders</li>
+<li><a id="a32124a"></a><span class="badge bg-danger">FEAT</span> Button to open tags dropdown menu</li>
+<li><a id="f0cea21"></a><span class="badge bg-danger">FEAT</span> Preview title in note view</li>
+<li><a id="cb3eb6b"></a><span class="badge bg-danger">FEAT</span> Switch for changing note's view/edit mode</li>
+<li><a id="db952ad"></a><span class="badge bg-primary">IMPR</span> Enter edit mode on title or content click in note view</li>
+<li><a id="0231dee"></a><span class="badge bg-primary">IMPR</span> Remove share activity from recent apps</li>
+<li><a id="bea1aa8"></a><span class="badge bg-primary">IMPR</span> Maximize height of clickable area for the folding button</li>
+<li><a id="ee5256e"></a><span class="badge bg-primary">IMPR</span> Remember location in refile dialog</li>
+<li><a id="2cb7e33"></a><span class="badge bg-primary">IMPR</span> Swipe down to sync in search results</li>
+<li><a id="efe3362"></a><span class="badge bg-primary">IMPR</span> Enable reminders by default</li>
+<li><a id="df2f6a1"></a><span class="badge bg-success">FIX</span> Fix broken notebook shortcuts</li>
+<li><a id="59f0a6a"></a><span class="badge bg-success">FIX</span> Fix parsing of link with square brackets in its name</li>
+<li><a id="de5fd52"></a><span class="badge bg-success">FIX</span> Fix PROPERTY line parsing</li>
+<li><a id="e6fe54a"></a><span class="badge bg-success">FIX</span> Use local-specific time format everywhere</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.8.3" class="outline-2">
+<h2 id="v1.8.3">v1.8.3</h2>
+<div class="outline-text-2" id="text-v1.8.3">
+</div>
+
+<ul class="org-ul">
+<li><a id="45584ac"></a><span class="badge bg-danger">FEAT</span> Overdue section in agenda</li>
+<li><a id="079ae30"></a><span class="badge bg-danger">FEAT</span> UI for end-time and delay/warning period</li>
+<li><a id="1682c58"></a><span class="badge bg-danger">FEAT</span> Paste button in notebook for when it's empty</li>
+<li><a id="3b69402"></a><span class="badge bg-danger">FEAT</span> Start new plain list item on enter press while editing content</li>
+<li><a id="9e737c3"></a><span class="badge bg-success">FIX</span> Fix issue of hidden notes when <code>o.e</code> is used</li>
+<li><a id="009cdd9"></a><span class="badge bg-success">FIX</span> Fix issue when pasting a large number of notes</li>
+<li><a id="6be3352"></a><span class="badge bg-success">FIX</span> Fix subtree unfolding (long-click)</li>
+<li><a id="c5ffe19"></a><span class="badge bg-primary">IMPR</span> Do not cancel sync on pull-to-sync</li>
+<li><a id="55cb7e5"></a><span class="badge bg-primary">IMPR</span> Add labels and make buttons obvious in timestamp dialog</li>
+<li><a id="4f0fc3a"></a><span class="badge bg-primary">IMPR</span> Underline breadcrumb links</li>
+<li><a id="5680593"></a><span class="badge bg-primary">IMPR</span> Do not fold other notes on refile's go-to action</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.8.2" class="outline-2">
+<h2 id="v1.8.2">v1.8.2</h2>
+<div class="outline-text-2" id="text-v1.8.2">
+</div>
+
+<ul class="org-ul">
+<li><a id="7603982"></a><span class="badge bg-danger">FEAT</span> Support adding trusted certificates for WebDAV repo</li>
+<li><a id="b7761a1"></a><span class="badge bg-success">FIX</span> Issue causing crash on start related to deleted repositories in the past</li>
+<li><a id="82bfc7f"></a><span class="badge bg-primary">IMPR</span> Display number of notes to be deleted in confirmation dialog</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.8.1" class="outline-2">
+<h2 id="v1.8.1">v1.8.1</h2>
+<div class="outline-text-2" id="text-v1.8.1">
+</div>
+
+<ul class="org-ul">
+<li><a id="3671c3a"></a><span class="badge bg-primary">IMPR</span> Enable auto-sync for WebDAV</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.8" class="outline-2">
+<h2 id="v1.8">v1.8</h2>
+<div class="outline-text-2" id="text-v1.8">
+</div>
+
+<ul class="org-ul">
+<li><a id="03eeb8b"></a><span class="badge bg-danger">FEAT</span> WebDAV repository support</li>
+<li><a id="14cfb5b"></a><span class="badge bg-danger">FEAT</span> Swipe down to sync (notebooks and notebook views)</li>
+<li><a id="227aebc"></a><span class="badge bg-danger">FEAT</span> Sort by title (<code>o.title</code>)</li>
+<li><a id="480f273"></a><span class="badge bg-danger">FEAT</span> Set Dropbox token by long-clicking the link button</li>
+<li><a id="62bce16"></a><span class="badge bg-success">FIX</span> Scroll to top when editing title (to keep breadcrumbs visible)</li>
+<li><a id="33653dd"></a><span class="badge bg-success">FIX</span> Display of remote notebook's modification time in notebook details</li>
+<li><a id="97b3b68"></a><span class="badge bg-success">FIX</span> Do not display confirmation dialog when new note is not modified</li>
+<li><a id="92a700e"></a><span class="badge bg-success">FIX</span> Metadata visibility issue on initial note loading</li>
+<li><a id="b1bd7cd"></a><span class="badge bg-success">FIX</span> Display all note's events in agenda</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.7.9" class="outline-2">
+<h2 id="v1.7.9">v1.7.9</h2>
+<div class="outline-text-2" id="text-v1.7.9">
+</div>
+
+<ul class="org-ul">
+<li><a id="07fc8f0"></a><span class="badge bg-danger">FEAT</span> Unfold entire subtree on folding button long-click</li>
+<li><a id="18e41b8"></a><span class="badge bg-danger">FEAT</span> Preference for default note view mode (view, edit or last used)</li>
+<li><a id="f3d07c6"></a><span class="badge bg-danger">FEAT</span> Preference for displaying checkmarks in widgets</li>
+<li><a id="f38e71e"></a><span class="badge bg-danger">FEAT</span> Fast scroller in notebook and search results</li>
+<li><a id="8a97777"></a><span class="badge bg-danger">FEAT</span> Share a link to locally stored image with Orgzly (not always available)</li>
+<li><a id="43df905"></a><span class="badge bg-primary">IMPR</span> Prompt to save or discard changes on breadcrumbs follow</li>
+<li><a id="00c130b"></a><span class="badge bg-primary">IMPR</span> Honor current level when creating new checklist item on the next line</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.7.8" class="outline-2">
+<h2 id="v1.7.8">v1.7.8</h2>
+<div class="outline-text-2" id="text-v1.7.8">
+</div>
+
+<ul class="org-ul">
+<li><a id="6afde6b"></a><span class="badge bg-success">FIX</span> Fix a possible crash when marking recurring note as done from note view</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.7.7" class="outline-2">
+<h2 id="v1.7.7">v1.7.7</h2>
+<div class="outline-text-2" id="text-v1.7.7">
+</div>
+
+<ul class="org-ul">
+<li><a id="67d2a80"></a><span class="badge bg-danger">FEAT</span> Clickable notebook and ancestors in note view</li>
+<li><a id="dcd682e"></a><span class="badge bg-danger">FEAT</span> Preference for link and breadcrumbs target (notebook or note view)</li>
+<li><a id="08999c5"></a><span class="badge bg-danger">FEAT</span> Preference for initial folding state of notebooks</li>
+<li><a id="92b3704"></a><span class="badge bg-danger">FEAT</span> Preference for ongoing notification's priority</li>
+<li><a id="6a65c1c"></a><span class="badge bg-success">FIX</span> Remove previous <code>LAST_REPEAT</code> when marking note as done from note view</li>
+<li><a id="60d4a71"></a><span class="badge bg-success">FIX</span> Check for existence of external cache directory (fixing possible crash)</li>
+<li><a id="06d081c"></a><span class="badge bg-success">FIX</span> Fix dialog title of notebook chooser</li>
+<li><a id="5727058"></a><span class="badge bg-primary">IMPR</span> Unfold note under which notes are moved</li>
+<li><a id="607057e"></a><span class="badge bg-primary">IMPR</span> Remove number of lines limit for title in note view</li>
+<li><a id="3a86b8e"></a><span class="badge bg-primary">IMPR</span> Display the number of notes being refiled</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.7.6" class="outline-2">
+<h2 id="v1.7.6">v1.7.6</h2>
+<div class="outline-text-2" id="text-v1.7.6">
+</div>
+
+<ul class="org-ul">
+<li><a id="dd6aca6"></a><span class="badge bg-success">FIX</span> Fix an issue causing crash on some older Android versions</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.7.5" class="outline-2">
+<h2 id="v1.7.5">v1.7.5</h2>
+<div class="outline-text-2" id="text-v1.7.5">
+</div>
+
+<ul class="org-ul">
+<li><a id="b1fc97e"></a><span class="badge bg-success">FIX</span> Moving notes around causing invalid tree structure in some cases</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.7.4" class="outline-2">
+<h2 id="v1.7.4">v1.7.4</h2>
+<div class="outline-text-2" id="text-v1.7.4">
+</div>
+
+<ul class="org-ul">
+<li><a id="01ca8c3"></a><span class="badge bg-danger">FEAT</span> Refile dialog for choosing the note to refile under</li>
+<li><a id="d9a152d"></a><span class="badge bg-danger">FEAT</span> Widget for creating new note in specific notebook</li>
+<li><a id="f2b1ea1"></a><span class="badge bg-danger">FEAT</span> Highlight note focused on from search results</li>
+<li><a id="d40b950"></a><span class="badge bg-success">FIX</span> Displaying image when absolute path is used</li>
+<li><a id="4e104a3"></a><span class="badge bg-primary">IMPR</span> Support properties with the same name (for appending to value)</li>
+<li><a id="ceebd6b"></a><span class="badge bg-primary">IMPR</span> Display event time in widgets</li>
+<li><a id="ce6b352"></a><span class="badge bg-primary">IMPR</span> Sort auto-completed tags in note view</li>
+<li><a id="5e44ff6"></a><span class="badge bg-primary">IMPR</span> Allow linking to a file anywhere on the device</li>
+<li><a id="202b0cc"></a><span class="badge bg-primary">IMPR</span> Display check mark for notes in widgets</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.7.3" class="outline-2">
+<h2 id="v1.7.3">v1.7.3</h2>
+<div class="outline-text-2" id="text-v1.7.3">
+</div>
+
+<ul class="org-ul">
+<li><a id="de9fdc7"></a><span class="badge bg-success">FIX</span> Searching by closed time</li>
+<li><a id="0dcdf78"></a><span class="badge bg-success">FIX</span> Demoting multiple notes under folded one</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.7.2" class="outline-2">
+<h2 id="v1.7.2">v1.7.2</h2>
+<div class="outline-text-2" id="text-v1.7.2">
+</div>
+
+<ul class="org-ul">
+<li><a id="1d79cfc"></a><span class="badge bg-danger">FEAT</span> Sort search results by event time (<code>o.e</code>)</li>
+<li><a id="91fe961"></a><span class="badge bg-danger">FEAT</span> Copy selected notes</li>
+<li><a id="98bb387"></a><span class="badge bg-danger">FEAT</span> Cut, Copy, Move and Refile multiple notes at once</li>
+<li><a id="a45ce1c"></a><span class="badge bg-success">FIX</span> Shift recurring note's events on state change</li>
+<li><a id="d31165c"></a><span class="badge bg-success">FIX</span> Fix search when multiple events per note are used</li>
+<li><a id="41d0317"></a><span class="badge bg-primary">IMPR</span> Display used event time in search results</li>
+<li><a id="f555973"></a><span class="badge bg-primary">IMPR</span> Unfold note itself when focused on from search results</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.7.1" class="outline-2">
+<h2 id="v1.7.1">v1.7.1</h2>
+<div class="outline-text-2" id="text-v1.7.1">
+</div>
+
+<ul class="org-ul">
+<li><a id="30fee16"></a><span class="badge bg-danger">FEAT</span> Events (plain timestamps) support (<code>e</code> search operator, agenda and reminders)</li>
+
+<li><a id="8ab9e78"></a><span class="badge bg-danger">FEAT</span> Swipe menus added back</li>
+<li><a id="9cf8845"></a><span class="badge bg-danger">FEAT</span> Preference for click/long-click action added back</li>
+<li><a id="949a9db"></a><span class="badge bg-primary">IMPR</span> Smaller improvements</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.7" class="outline-2">
+<h2 id="v1.7">v1.7</h2>
+<div class="outline-text-2" id="text-v1.7">
+</div>
+
+<ul class="org-ul">
+<li><a id="1bdb8d5"></a><span class="badge bg-danger">FEAT</span> Support quick folding of note's metadata</li>
+<li><a id="3b8c468"></a><span class="badge bg-danger">FEAT</span> Replace swipe menus with bottom action bar</li>
+<li><a id="35aa007"></a><span class="badge bg-danger">FEAT</span> Swipe left to open or focus on the note</li>
+<li><a id="45fa4b0"></a><span class="badge bg-primary">IMPR</span> Force upper case state keywords in Settings</li>
+<li><a id="73d0ee0"></a><span class="badge bg-primary">IMPR</span> Use larger font size for content in note view</li>
+<li><a id="78572ac"></a><span class="badge bg-primary">IMPR</span> Start using Android Architecture Components</li>
+<li><a id="1e6e065"></a><span class="badge bg-success">FIX</span> Issue when using week in search queries</li>
+<li><a id="4749c4c"></a><span class="badge bg-success">FIX</span> Potential issues after time zone change</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.6.12" class="outline-2">
+<h2 id="v1.6.12">v1.6.12</h2>
+<div class="outline-text-2" id="text-v1.6.12">
+</div>
+
+<ul class="org-ul">
+<li><a id="5b26363"></a><span class="badge bg-danger">FEAT</span> Support multi-line search queries</li>
+<li><a id="a676ea5"></a><span class="badge bg-success">FIX</span> Recognition of images in base directory</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.6.11" class="outline-2">
+<h2 id="v1.6.11">v1.6.11</h2>
+<div class="outline-text-2" id="text-v1.6.11">
+</div>
+
+<ul class="org-ul">
+<li><a id="d155e4a"></a><span class="badge bg-danger">FEAT</span> Display linked images</li>
+<li><a id="72bdd25"></a><span class="badge bg-danger">FEAT</span> Option to keep the screen turned on and bright</li>
+<li><a id="544e1fa"></a><span class="badge bg-danger">FEAT</span> Support sharing to specific notebook directly</li>
+<li><a id="3d5f4cb"></a><span class="badge bg-success">FIX</span> Handle links to files outside storage directory</li>
+<li><a id="5e31d60"></a><span class="badge bg-success">FIX</span> Aligning tags when fullwidth characters are used</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.6.10" class="outline-2">
+<h2 id="v1.6.10">v1.6.10</h2>
+<div class="outline-text-2" id="text-v1.6.10">
+</div>
+
+<ul class="org-ul">
+<li><a id="156814b"></a><span class="badge bg-danger">FEAT</span> Follow links to files in storage directory</li>
+<li><a id="ca8a58c"></a><span class="badge bg-danger">FEAT</span> Follow links to other notebooks within the app</li>
+<li><a id="4af304a"></a><span class="badge bg-success">FIX</span> Remove scheduled time after marking repeated deadline as done</li>
+<li><a id="994ed25"></a><span class="badge bg-success">FIX</span> Unresponsive UI after returning from Settings</li>
+<li><a id="f655312"></a><span class="badge bg-primary">IMPR</span> Various bug fixes and improvements</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.6.9" class="outline-2">
+<h2 id="v1.6.9">v1.6.9</h2>
+<div class="outline-text-2" id="text-v1.6.9">
+</div>
+
+<ul class="org-ul">
+<li><a id="8e9ce74"></a><span class="badge bg-danger">FEAT</span> Quick note from ongoing notification</li>
+<li><a id="2a0a6df"></a><span class="badge bg-danger">FEAT</span> Display only set or selected metadata in note view</li>
+<li><a id="6dfe3f6"></a><span class="badge bg-danger">FEAT</span> Support checkboxes in notebook's preface</li>
+<li><a id="2f7114a"></a><span class="badge bg-primary">IMPR</span> Allow installing app on the external storage</li>
+<li><a id="797a27f"></a><span class="badge bg-success">FIX</span> Fix checkbox-on-enter to work with soft keyboard</li>
+<li><a id="3c7bb35"></a><span class="badge bg-success">FIX</span> Don't parse checkboxes in title</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.6.8" class="outline-2">
+<h2 id="v1.6.8">v1.6.8</h2>
+<div class="outline-text-2" id="text-v1.6.8">
+</div>
+
+<ul class="org-ul">
+<li><a id="e584e3c"></a><span class="badge bg-danger">FEAT</span> Toggle checkboxes</li>
+<li><a id="6c5043f"></a><span class="badge bg-danger">FEAT</span> Sort notes by position in notebook (<code>o.pos</code>)</li>
+<li><a id="dcc84ab"></a><span class="badge bg-danger">FEAT</span> Preference to display notebook name in widget</li>
+<li><a id="4352186"></a><span class="badge bg-danger">FEAT</span> Preference to disable <code>LAST_REPEAT</code> property</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.6.7" class="outline-2">
+<h2 id="v1.6.7">v1.6.7</h2>
+<div class="outline-text-2" id="text-v1.6.7">
+</div>
+
+<ul class="org-ul">
+<li><a id="534ecba"></a><span class="badge bg-danger">FEAT</span> Support larger font size for widget</li>
+<li><a id="886d725"></a><span class="badge bg-primary">IMPR</span> Add buttons for setting deadline time</li>
+<li><a id="843ef92"></a><span class="badge bg-success">FIX</span> Display inherited tags in widget</li>
+<li><a id="8f32c77"></a><span class="badge bg-success">FIX</span> Handle large values for tags indentation</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.6.6" class="outline-2">
+<h2 id="v1.6.6">v1.6.6</h2>
+<div class="outline-text-2" id="text-v1.6.6">
+</div>
+
+<ul class="org-ul">
+<li><a id="118bdb7"></a><span class="badge bg-danger">FEAT</span> Configure widgets' color scheme and transparency</li>
+<li><a id="690e772"></a><span class="badge bg-danger">FEAT</span> Configure widgets' update frequency</li>
+<li><a id="c088e09"></a><span class="badge bg-danger">FEAT</span> New action for moving note to the end of selected notebook</li>
+<li><a id="6cef71b"></a><span class="badge bg-primary">IMPR</span> Various bug fixes and improvements</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.6.5" class="outline-2">
+<h2 id="v1.6.5">v1.6.5</h2>
+<div class="outline-text-2" id="text-v1.6.5">
+</div>
+
+<ul class="org-ul">
+<li><a id="2b90115"></a><span class="badge bg-danger">FEAT</span> Fold drawers, unfold on click temporarily</li>
+<li><a id="9cb179f"></a><span class="badge bg-danger">FEAT</span> Log time shifting to <code>LOGBOOK</code> drawer</li>
+<li><a id="94a3a01"></a><span class="badge bg-danger">FEAT</span> Update <code>LAST_REPEAT</code> property after shifting time</li>
+<li><a id="a63fd11"></a><span class="badge bg-success">FIX</span> Keep habit deadline on time shift</li>
+<li><a id="e073964"></a><span class="badge bg-success">FIX</span> Handle content lines formatted as org headings</li>
+<li><a id="eedbd09"></a><span class="badge bg-primary">IMPR</span> Various smaller improvements</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.6.4" class="outline-2">
+<h2 id="v1.6.4">v1.6.4</h2>
+<div class="outline-text-2" id="text-v1.6.4">
+</div>
+
+<ul class="org-ul">
+<li><a id="00ea85b"></a><span class="badge bg-success">FIX</span> Bug fixes</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.6.3" class="outline-2">
+<h2 id="v1.6.3">v1.6.3</h2>
+<div class="outline-text-2" id="text-v1.6.3">
+</div>
+
+<ul class="org-ul">
+<li><a id="2e796e5"></a><span class="badge bg-danger">FEAT</span> Search and order by created-at time (<code>cr</code>)</li>
+<li><a id="570173a"></a><span class="badge bg-danger">FEAT</span> Option to hide metadata in note view</li>
+<li><a id="59f90c3"></a><span class="badge bg-danger">FEAT</span> New quick-menu button for changing state</li>
+<li><a id="ec8a9e3"></a><span class="badge bg-danger">FEAT</span> Ignore system locale and use US (new option)</li>
+<li><a id="601c77d"></a><span class="badge bg-danger">FEAT</span> Preset notebook on new note from widget</li>
+<li><a id="c481bc8"></a><span class="badge bg-success">FIX</span> Make file immediately visible when using MTP</li>
+<li><a id="16f7ba4"></a><span class="badge bg-primary">IMPR</span> Target Oreo</li>
+<li><a id="34dccb2"></a><span class="badge bg-primary">IMPR</span> Use new app logo</li>
+<li><a id="2bc2c2e"></a><span class="badge bg-primary">IMPR</span> Drawer, note view and bullets redesign</li>
+<li><a id="aa3e702"></a><span class="badge bg-primary">IMPR</span> Several performance improvements</li>
+<li><a id="cea3235"></a><span class="badge bg-primary">IMPR</span> New and updated translations</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.6.2" class="outline-2">
+<h2 id="v1.6.2">v1.6.2</h2>
+<div class="outline-text-2" id="text-v1.6.2">
+</div>
+
+<ul class="org-ul">
+<li><a id="8221983"></a><span class="badge bg-danger">FEAT</span> Remove Agenda and support <code>ad.days</code> in any query</li>
+<li><a id="28016b0"></a><span class="badge bg-danger">FEAT</span> Support grouping using parentheses in queries</li>
+<li><a id="b68954d"></a><span class="badge bg-danger">FEAT</span> Support <code>o.state</code></li>
+<li><a id="18d3401"></a><span class="badge bg-danger">FEAT</span> Support <code>c.closed-time</code> and <code>o.closed</code></li>
+<li><a id="2378f07"></a><span class="badge bg-danger">FEAT</span> Support <code>eq</code>, <code>ne</code>, <code>lt</code>, <code>le</code>, <code>gt</code> and <code>ge</code> in <code>s</code>, <code>d</code> and <code>c</code> operators</li>
+<li><a id="f99e733"></a><span class="badge bg-danger">FEAT</span> Support using <code>now</code> and past times in queries (e.g. <code>s.gt.-2d</code>)</li>
+<li><a id="b8035a4"></a><span class="badge bg-danger">FEAT</span> Import and export saved searches</li>
+<li><a id="f55ba7e"></a><span class="badge bg-danger">FEAT</span> Add app shortcuts for syncing and creating new notes</li>
+<li><a id="4e9351b"></a><span class="badge bg-danger">FEAT</span> Allow toggling <code>DONE</code> state with the check mark button from quick-menu</li>
+<li><a id="eb6dd16"></a><span class="badge bg-primary">IMPR</span> Use system's file browser for selecting directories</li>
+<li><a id="ce917a7"></a><span class="badge bg-primary">IMPR</span> New translations from Orgzly's <a href="https://crowdin.com/project/orgzly">localization project</a></li>
+</ul>
+</div>
+
+<div id="outline-container-v1.6.1" class="outline-2">
+<h2 id="v1.6.1">v1.6.1</h2>
+<div class="outline-text-2" id="text-v1.6.1">
+</div>
+<ul class="org-ul">
+<li><a id="5e5cc21"></a><span class="badge bg-danger">FEAT</span> Follow internal links (using <code>CUSTOM_ID</code> and <code>ID</code> properties)</li>
+
+<li><a id="acd199e"></a><span class="badge bg-danger">FEAT</span> Blink LED on reminder's notification</li>
+
+<li><a id="8e0aff2"></a><span class="badge bg-danger">FEAT</span> Support <code>.p</code> search operator</li>
+
+<li><a id="3bb6c96"></a><span class="badge bg-danger">FEAT</span> Support <code>ps</code> and <code>.ps</code> search operators</li>
+
+<li><a id="d0d7085"></a><span class="badge bg-danger">FEAT</span> Preference to force UTF-8 when loading and saving notebooks</li>
+
+<li><a id="2379d19"></a><span class="badge bg-primary">IMPR</span> Fold/unfold notes and content by clicking on bullets</li>
+
+<li><a id="6ee0fcf"></a><span class="badge bg-success">FIX</span> Opening different note when clicking reminder's notification</li>
+
+<li><a id="be60f7b"></a><span class="badge bg-primary">IMPR</span> Various bug fixes and improvements</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.6" class="outline-2">
+<h2 id="v1.6">v1.6</h2>
+<div class="outline-text-2" id="text-v1.6">
+</div>
+<ul class="org-ul">
+<li><a id="629b387"></a><span class="badge bg-danger">FEAT</span> Agenda view</li>
+<li><a id="2ae0baf"></a><span class="badge bg-danger">FEAT</span> Auto-sync for local repositories (experimental)</li>
+<li><a id="a2b983b"></a><span class="badge bg-danger">FEAT</span> Snooze for reminders</li>
+<li><a id="97764c3"></a><span class="badge bg-danger">FEAT</span> Support <code>or</code> in search queries</li>
+<li><a id="6b6bdad"></a><span class="badge bg-danger">FEAT</span> Support <code>it</code> (type of state) search operator</li>
+<li><a id="d16fb62"></a><span class="badge bg-danger">FEAT</span> Preference for indenting tags (Org file format)</li>
+<li><a id="065cd15"></a><span class="badge bg-success">FIX</span> Various bug fixes</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.5.3" class="outline-2">
+<h2 id="v1.5.3">v1.5.3</h2>
+<div class="outline-text-2" id="text-v1.5.3">
+</div>
+<ul class="org-ul">
+<li><a id="be33c85"></a><span class="badge bg-primary">IMPR</span> Display notes with more specific times first when sorting</li>
+<li><a id="cd15238"></a><span class="badge bg-success">FIX</span> Resetting notebook shortcut on some launchers</li>
+<li><a id="f9768cb"></a><span class="badge bg-success">FIX</span> State cycling with multiple done-type states defined</li>
+<li><a id="cc0fffd"></a><span class="badge bg-success">FIX</span> Styling words at the end of the title</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.5.2" class="outline-2">
+<h2 id="v1.5.2">v1.5.2</h2>
+<div class="outline-text-2" id="text-v1.5.2">
+</div>
+<ul class="org-ul">
+<li><a id="db966f2"></a><span class="badge bg-danger">FEAT</span> Support emphasis and monospace</li>
+<li><a id="cce2ad6"></a><span class="badge bg-danger">FEAT</span> Display notes count in the list of notebooks</li>
+<li><a id="b00a0dd"></a><span class="badge bg-danger">FEAT</span> Hide number of content lines (new option)</li>
+<li><a id="6a396f1"></a><span class="badge bg-primary">IMPR</span> Display cut, paste and move buttons in action bar (moved from overflow)</li>
+<li><a id="4a39a73"></a><span class="badge bg-primary">IMPR</span> Display notebook's last action error in subtitle</li>
+<li><a id="d51b67b"></a><span class="badge bg-success">FIX</span> Brief appearance of white window on app start when using dark color scheme</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.5.1" class="outline-2">
+<h2 id="v1.5.1">v1.5.1</h2>
+<div class="outline-text-2" id="text-v1.5.1">
+</div>
+<ul class="org-ul">
+<li><a id="2e5fb19"></a><span class="badge bg-primary">IMPR</span> Various bug fixes and improvements</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.5" class="outline-2">
+<h2 id="v1.5">v1.5</h2>
+<div class="outline-text-2" id="text-v1.5">
+</div>
+<ul class="org-ul">
+<li><a id="e7d565e"></a><span class="badge bg-danger">FEAT</span> Reminders</li>
+<li><a id="fde8a00"></a><span class="badge bg-danger">FEAT</span> Widget for saved searches</li>
+<li><a id="b6fe66d"></a><span class="badge bg-danger">FEAT</span> Widget for notebooks</li>
+<li><a id="1bf4c2b"></a><span class="badge bg-danger">FEAT</span> <code>s.none</code> and <code>d.none</code> search expressions</li>
+<li><a id="003c2e1"></a><span class="badge bg-danger">FEAT</span> Separate header and content with an empty line (new option)</li>
+<li><a id="9d48b71"></a><span class="badge bg-danger">FEAT</span> Sync after new note is created (new option)</li>
+<li><a id="4b88528"></a><span class="badge bg-danger">FEAT</span> Sync button in ongoing notification</li>
+<li><a id="28c5681"></a><span class="badge bg-danger">FEAT</span> Sync status notifications</li>
+<li><a id="f19d9f4"></a><span class="badge bg-success">FIX</span> Using Dropbox URL with trailing slash</li>
+<li><a id="9ab5238"></a><span class="badge bg-success">FIX</span> Shift times of notes without state when marked done</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.4.13" class="outline-2">
+<h2 id="v1.4.13">v1.4.13</h2>
+<div class="outline-text-2" id="text-v1.4.13">
+</div>
+<ul class="org-ul">
+<li><a id="df482fa"></a><span class="badge bg-danger">FEAT</span> Support for <code>.t</code> search operator</li>
+<li><a id="775ba0e"></a><span class="badge bg-danger">FEAT</span> Display inherited tags in search results (new option)</li>
+<li><a id="48ffaae"></a><span class="badge bg-danger">FEAT</span> Default notebook when sharing to Orgzly (new option)</li>
+<li><a id="06bc302"></a><span class="badge bg-danger">FEAT</span> Persian translation</li>
+<li><a id="5ad4884"></a><span class="badge bg-danger">FEAT</span> Turkish translation</li>
+<li><a id="687781d"></a><span class="badge bg-primary">IMPR</span> Few syncing speed optimizations</li>
+<li><a id="a7365d8"></a><span class="badge bg-primary">IMPR</span> Support for using root folder as a Dropbox repo</li>
+<li><a id="6b34405"></a><span class="badge bg-primary">IMPR</span> Exported SyncService for starting it from outside the app</li>
+<li><a id="f98378b"></a><span class="badge bg-success">FIX</span> Fix folded state cycling button sometimes not being displayed</li>
+<li><a id="35472af"></a><span class="badge bg-success">FIX</span> Fix searching for tags when inherited tags are used</li>
+<li><a id="6a6d574"></a><span class="badge bg-success">FIX</span> Fix corrupted properties in note on rotation</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.4.12" class="outline-2">
+<h2 id="v1.4.12">v1.4.12</h2>
+<div class="outline-text-2" id="text-v1.4.12">
+</div>
+<ul class="org-ul">
+<li><a id="7979acd"></a><span class="badge bg-primary">IMPR</span> Various bug fixes and improvements</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.4.11" class="outline-2">
+<h2 id="v1.4.11">v1.4.11</h2>
+<div class="outline-text-2" id="text-v1.4.11">
+</div>
+<ul class="org-ul">
+<li><a id="ee2da55"></a><span class="badge bg-danger">FEAT</span> Black color scheme</li>
+<li><a id="8a3c5c0"></a><span class="badge bg-danger">FEAT</span> Hide preface (new option)</li>
+<li><a id="d7de364"></a><span class="badge bg-danger">FEAT</span> Support links for <code>tel</code>, <code>sms</code>, <code>geo</code> and more</li>
+<li><a id="87d03e4"></a><span class="badge bg-primary">IMPR</span> Always display link's description instead of link</li>
+<li><a id="8e63850"></a><span class="badge bg-primary">IMPR</span> Ask for confirmation to delete notes everywhere</li>
+<li><a id="6d0f21a"></a><span class="badge bg-primary">IMPR</span> Keep list of repos sorted</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.4.10" class="outline-2">
+<h2 id="v1.4.10">v1.4.10</h2>
+<div class="outline-text-2" id="text-v1.4.10">
+</div>
+<ul class="org-ul">
+<li><a id="9147ea4"></a><span class="badge bg-danger">FEAT</span> Ongoing notification for creating note (new option)</li>
+<li><a id="7c19cbd"></a><span class="badge bg-danger">FEAT</span> Layout direction (new option)</li>
+<li><a id="8f29257"></a><span class="badge bg-danger">FEAT</span> Allow browsing secondary storage</li>
+<li><a id="0e43417"></a><span class="badge bg-primary">IMPR</span> Do not display empty preface in the notebook</li>
+<li><a id="f2d880d"></a><span class="badge bg-primary">IMPR</span> Warn about modified note even on <code>X</code> press</li>
+<li><a id="23fb178"></a><span class="badge bg-primary">IMPR</span> Minor design improvements</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.4.9" class="outline-2">
+<h2 id="v1.4.9">v1.4.9</h2>
+<div class="outline-text-2" id="text-v1.4.9">
+</div>
+<ul class="org-ul">
+<li><a id="fc8e702"></a><span class="badge bg-danger">FEAT</span> Clickable external links in notes' list (both title and content)</li>
+<li><a id="c675e24"></a><span class="badge bg-danger">FEAT</span> Additional font size (slightly larger then default)</li>
+<li><a id="b931e93"></a><span class="badge bg-danger">FEAT</span> Configurable location of notebook name in search results</li>
+
+<li><a id="82fadec"></a><span class="badge bg-primary">IMPR</span> Few smaller notes' list design changes</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.4.8" class="outline-2">
+<h2 id="v1.4.8">v1.4.8</h2>
+<div class="outline-text-2" id="text-v1.4.8">
+</div>
+<ul class="org-ul">
+<li><a id="561221c"></a><span class="badge bg-success">FIX</span> Fix possible crash when duplicate states are added to settings</li>
+<li><a id="1799120"></a><span class="badge bg-success">FIX</span> Hide FAB when items are selected</li>
+<li><a id="9d6462d"></a><span class="badge bg-primary">IMPR</span> New dialog for configuring states in Settings</li>
+<li><a id="edd760c"></a><span class="badge bg-primary">IMPR</span> Minor design improvements in note view</li>
+
+<li><a id="c41f866"></a><span class="badge bg-primary">IMPR</span> Make folding button bold if there are hidden notes</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.4.7" class="outline-2">
+<h2 id="v1.4.7">v1.4.7</h2>
+<div class="outline-text-2" id="text-v1.4.7">
+</div>
+<ul class="org-ul">
+<li><a id="8d35c9f"></a><span class="badge bg-danger">FEAT</span> Delete note from note editor</li>
+<li><a id="a6c5b24"></a><span class="badge bg-primary">IMPR</span> All Toasts replaced with Snackbars</li>
+<li><a id="be34d69"></a><span class="badge bg-primary">IMPR</span> Various bug fixes and improvements</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.4.6" class="outline-2">
+<h2 id="v1.4.6">v1.4.6</h2>
+<div class="outline-text-2" id="text-v1.4.6">
+</div>
+<ul class="org-ul">
+<li><a id="783e03e"></a><span class="badge bg-danger">FEAT</span> Search operators for sorting (<code>o</code> and <code>.o</code>)</li>
+
+<li><a id="df19601"></a><span class="badge bg-danger">FEAT</span> Save note on keyboard's action button press</li>
+
+<li><a id="dee3d55"></a><span class="badge bg-danger">FEAT</span> Separate notes with new-line or not (new option)</li>
+
+<li><a id="f930d90"></a><span class="badge bg-primary">IMPR</span> Dismiss Snackbar on any touch</li>
+
+<li><a id="5575dfb"></a><span class="badge bg-primary">IMPR</span> Close drawer when Snackbar is displayed</li>
+
+<li><a id="a11d8a7"></a><span class="badge bg-success">FIX</span> Remove support for parsing <code>CLOCK</code> for now</li>
+
+<li><a id="fca08f9"></a><span class="badge bg-success">FIX</span> Fix <code>b</code> search operator parsing (dot as a notebook name)</li>
+
+<li><a id="63c989c"></a><span class="badge bg-success">FIX</span> Hide cycle-visibility menu item if notebook doesn't exist</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.4.5" class="outline-2">
+<h2 id="v1.4.5">v1.4.5</h2>
+<div class="outline-text-2" id="text-v1.4.5">
+</div>
+<ul class="org-ul">
+<li><a id="0791acc"></a><span class="badge bg-danger">FEAT</span> Show Snackbar after creating note and action to create another</li>
+<li><a id="c4ebeac"></a><span class="badge bg-primary">IMPR</span> Open note by clicking it from search results</li>
+<li><a id="fcf5d73"></a><span class="badge bg-primary">IMPR</span> Allow note content text to be selected, even if not in Edit mode</li>
+<li><a id="9a3016c"></a><span class="badge bg-primary">IMPR</span> Enter Edit mode for new notes and when clicking note content</li>
+<li><a id="df6d06a"></a><span class="badge bg-primary">IMPR</span> Open keyboard when switching to Edit mode</li>
+<li><a id="75fcfcd"></a><span class="badge bg-primary">IMPR</span> Check for storage permission before creating directory repo</li>
+<li><a id="7e85f7e"></a><span class="badge bg-success">FIX</span> Encode Dropbox and directory repo URLs</li>
+<li><a id="eb937bf"></a><span class="badge bg-success">FIX</span> Fix possible crash when canceling sync</li>
+<li><a id="ed2b509"></a><span class="badge bg-success">FIX</span> Fix possible duplicates when searching using t operator</li>
+<li><a id="5f1ae88"></a><span class="badge bg-success">FIX</span> Stop displaying only one title line</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.4.4" class="outline-2">
+<h2 id="v1.4.4">v1.4.4</h2>
+<div class="outline-text-2" id="text-v1.4.4">
+</div>
+<ul class="org-ul">
+<li><a id="82ed618"></a><span class="badge bg-danger">FEAT</span> Support links (<code>http</code> and <code>mailto</code>) in note view</li>
+
+<li><a id="ce26920"></a><span class="badge bg-danger">FEAT</span> Tags inheritance (<code>t</code> operator)</li>
+
+<li><a id="2e59f07"></a><span class="badge bg-danger">FEAT</span> Search by note's tag only (new <code>tn</code> operator)</li>
+
+<li><a id="f77f746"></a><span class="badge bg-danger">FEAT</span> Floating action button</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.4.3" class="outline-2">
+<h2 id="v1.4.3">v1.4.3</h2>
+<div class="outline-text-2" id="text-v1.4.3">
+</div>
+<ul class="org-ul">
+<li><a id="382c4b8"></a><span class="badge bg-success">FIX</span> Encode links of notebooks synced by older versions</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.4.2" class="outline-2">
+<h2 id="v1.4.2">v1.4.2</h2>
+<div class="outline-text-2" id="text-v1.4.2">
+</div>
+<ul class="org-ul">
+<li><a id="4961442"></a><span class="badge bg-danger">FEAT</span> Support renaming notebooks</li>
+<li><a id="c874b20"></a><span class="badge bg-danger">FEAT</span> UI for <code>PROPERTIES</code></li>
+<li><a id="ecb3ef0"></a><span class="badge bg-danger">FEAT</span> Chinese translation</li>
+
+<li><a id="10ae301"></a><span class="badge bg-success">FIX</span> Use first configured state keyword when marking note as done</li>
+
+<li><a id="fee5f3a"></a><span class="badge bg-success">FIX</span> Notebooks encoding fix when using directory repo type</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.4.1" class="outline-2">
+<h2 id="v1.4.1">v1.4.1</h2>
+<div class="outline-text-2" id="text-v1.4.1">
+</div>
+<ul class="org-ul">
+<li><a id="22e4ac7"></a><span class="badge bg-danger">FEAT</span> Sort notebooks by name (new option)</li>
+<li><a id="6755b59"></a><span class="badge bg-danger">FEAT</span> Support <code>.b.notebook</code> search expression</li>
+<li><a id="a9087bc"></a><span class="badge bg-danger">FEAT</span> Prompt to save or discard changes on back press</li>
+<li><a id="f3d9586"></a><span class="badge bg-danger">FEAT</span> Show snackbar on sync errors</li>
+<li><a id="e4028f4"></a><span class="badge bg-primary">IMPR</span> Skip files starting with <code>.#</code> when syncing</li>
+<li><a id="fc3d475"></a><span class="badge bg-primary">IMPR</span> Display new repo buttons instead of empty repository list</li>
+<li><a id="07dce4c"></a><span class="badge bg-primary">IMPR</span> Display titles of notebooks in a list when sharing to Orgzly</li>
+<li><a id="6337cd2"></a><span class="badge bg-primary">IMPR</span> Use Dropbox API v2</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.4" class="outline-2">
+<h2 id="v1.4">v1.4</h2>
+<div class="outline-text-2" id="text-v1.4">
+</div>
+<ul class="org-ul">
+<li><a id="95c3d29"></a><span class="badge bg-danger">FEAT</span> Add “Fold content” option</li>
+
+<li><a id="4b0ca7b"></a><span class="badge bg-danger">FEAT</span> Add “Display content in search” option</li>
+
+<li><a id="cd90ff5"></a><span class="badge bg-primary">IMPR</span> Rearrange Settings</li>
+
+<li><a id="d33e588"></a><span class="badge bg-danger">FEAT</span> Update “What's New” dialog's button when DB upgrade is in progress</li>
+
+<li><a id="cf0a43f"></a><span class="badge bg-primary">IMPR</span> Use large bullet for folded notes with children</li>
+
+<li><a id="62fc99b"></a><span class="badge bg-success">FIX</span> Fix table for those that had 1.4-beta.1 installed</li>
+
+<li><a id="8c4cb3c"></a><span class="badge bg-success">FIX</span> Fix bullets text style</li>
+<li><a id="ddf3ed2"></a><span class="badge bg-success">FIX</span> Fix inserting timestamps to DB</li>
+
+<li><a id="201ab7b"></a><span class="badge bg-danger">FEAT</span> Folding notes</li>
+
+<li><a id="f44c1df"></a><span class="badge bg-danger">FEAT</span> List density: Comfortable, Cozy, Compact</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.3.5" class="outline-2">
+<h2 id="v1.3.5">v1.3.5</h2>
+<div class="outline-text-2" id="text-v1.3.5">
+</div>
+<ul class="org-ul">
+<li><a id="9dc7939"></a><span class="badge bg-danger">FEAT</span> Support <code>d</code> (deadline) search operator</li>
+
+<li><a id="3f67207"></a><span class="badge bg-danger">FEAT</span> Preference for selecting displayed notebook details</li>
+
+<li><a id="3efae60"></a><span class="badge bg-success">FIX</span> Allow years with more then 4 digits</li>
+
+<li><a id="ade2c5e"></a><span class="badge bg-primary">IMPR</span> Add confirmation of Dropbox unlinking</li>
+<li><a id="e8803aa"></a><span class="badge bg-primary">IMPR</span> Trim notebook name</li>
+<li><a id="c1873be"></a><span class="badge bg-primary">IMPR</span> Hide import notebooks icon</li>
+
+<li><a id="01d8b39"></a><span class="badge bg-primary">IMPR</span> Lighter notebook sync error messages</li>
+
+<li><a id="de764db"></a><span class="badge bg-primary">IMPR</span> Use compact notes list by default</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.3.4" class="outline-2">
+<h2 id="v1.3.4">v1.3.4</h2>
+<div class="outline-text-2" id="text-v1.3.4">
+</div>
+<ul class="org-ul">
+<li><a id="f7338ea"></a><span class="badge bg-danger">FEAT</span> Support using Orgzly for “Note to self” voice action</li>
+<li><a id="c586f18"></a><span class="badge bg-success">FIX</span> Fixed quick-menu opening (issue on some devices)</li>
+<li><a id="b66ae59"></a><span class="badge bg-success">FIX</span> Shift time at least once for <code>++</code> repeater</li>
+<li><a id="8c1bd9f"></a><span class="badge bg-success">FIX</span> Scroll to last note when opening quick-menu</li>
+<li><a id="ea83e81"></a><span class="badge bg-primary">IMPR</span> “What's New” layout cleanup</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.3.3" class="outline-2">
+<h2 id="v1.3.3">v1.3.3</h2>
+<div class="outline-text-2" id="text-v1.3.3">
+</div>
+<ul class="org-ul">
+<li><a id="fc56fc9"></a><span class="badge bg-success">FIX</span> Handle storage permission on Marshmallow</li>
+
+<li><a id="5e4212d"></a><span class="badge bg-success">FIX</span> Fixed title's auto-correction</li>
+
+<li><a id="d5c7797"></a><span class="badge bg-primary">IMPR</span> Smaller improvements</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.3.2" class="outline-2">
+<h2 id="v1.3.2">v1.3.2</h2>
+<div class="outline-text-2" id="text-v1.3.2">
+</div>
+<ul class="org-ul">
+<li><a id="95f9031"></a><span class="badge bg-danger">FEAT</span> Support for right-to-left layouts</li>
+
+<li><a id="af9f55a"></a><span class="badge bg-primary">IMPR</span> Various bug fixes and improvements</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.3.1" class="outline-2">
+<h2 id="v1.3.1">v1.3.1</h2>
+<div class="outline-text-2" id="text-v1.3.1">
+</div>
+<ul class="org-ul">
+<li><a id="69cd208"></a><span class="badge bg-danger">FEAT</span> Add dark color scheme</li>
+
+<li><a id="c77bb03"></a><span class="badge bg-primary">IMPR</span> Support <code>.i</code> operator</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.3" class="outline-2">
+<h2 id="v1.3">v1.3</h2>
+<div class="outline-text-2" id="text-v1.3">
+</div>
+<ul class="org-ul">
+<li><a id="26d7155"></a><span class="badge bg-danger">FEAT</span> Allow changing repeaters (for recurring tasks)</li>
+
+<li><a id="725e000"></a><span class="badge bg-danger">FEAT</span> Allow modifying saved searches</li>
+
+<li><a id="ca2d391"></a><span class="badge bg-danger">FEAT</span> Add Done button to note's quick-menu</li>
+
+<li><a id="ade003d"></a><span class="badge bg-danger">FEAT</span> Add Settings button to the drawer</li>
+
+<li><a id="f579712"></a><span class="badge bg-primary">IMPR</span> Use larger font for note body and notebook description</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.2.2" class="outline-2">
+<h2 id="v1.2.2">v1.2.2</h2>
+<div class="outline-text-2" id="text-v1.2.2">
+</div>
+<ul class="org-ul">
+<li><a id="afc989c"></a><span class="badge bg-danger">FEAT</span> Large font size setting</li>
+
+<li><a id="726fc61"></a><span class="badge bg-danger">FEAT</span> Search operator <code>p.priority</code> added</li>
+
+<li><a id="78150b1"></a><span class="badge bg-danger">FEAT</span> Search operator <code>s.day</code> improved</li>
+
+<li><a id="821f4f0"></a><span class="badge bg-success">FIX</span> Tags parsing</li>
+
+<li><a id="def34fb"></a><span class="badge bg-danger">FEAT</span> Delete-note added to quick-menu</li>
+<li><a id="61538b9"></a><span class="badge bg-primary">IMPR</span> Various smaller improvements</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.2.1" class="outline-2">
+<h2 id="v1.2.1">v1.2.1</h2>
+<div class="outline-text-2" id="text-v1.2.1">
+</div>
+<ul class="org-ul">
+<li><a id="ca05c8d"></a><span class="badge bg-success">FIX</span> Fix potential crash due to back button not closing Search/CAB</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.2" class="outline-2">
+<h2 id="v1.2">v1.2</h2>
+<div class="outline-text-2" id="text-v1.2">
+</div>
+<ul class="org-ul">
+<li><a id="c73a922"></a><span class="badge bg-danger">FEAT</span> Implement quick-menu (opened on note swipe)</li>
+
+<li><a id="23ac475"></a><span class="badge bg-danger">FEAT</span> Current location in app marked in drawer</li>
+
+<li><a id="f32f059"></a><span class="badge bg-primary">IMPR</span> Use web page title when sharing to Orgzly</li>
+
+<li><a id="fae340f"></a><span class="badge bg-success">FIX</span> States' letters-only requirement removed</li>
+
+<li><a id="75f8fb7"></a><span class="badge bg-primary">IMPR</span> Various smaller improvements</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.1.1" class="outline-2">
+<h2 id="v1.1.1">v1.1.1</h2>
+<div class="outline-text-2" id="text-v1.1.1">
+</div>
+<ul class="org-ul">
+<li><a id="d5d98da"></a><span class="badge bg-danger">FEAT</span> Flag unsynced notebooks</li>
+
+<li><a id="41bbdf5"></a><span class="badge bg-danger">FEAT</span> Create directories from file browser</li>
+
+<li><a id="6668e13"></a><span class="badge bg-danger">FEAT</span> Set creation time for notes (new option)</li>
+
+<li><a id="7c7b7ed"></a><span class="badge bg-danger">FEAT</span> Add check-box for deleting remote notebook</li>
+
+<li><a id="b057b79"></a><span class="badge bg-primary">IMPR</span> Drawer improvements</li>
+
+<li><a id="ba7d701"></a><span class="badge bg-primary">IMPR</span> Bug fixes and smaller improvements</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.1" class="outline-2">
+<h2 id="v1.1">v1.1</h2>
+<div class="outline-text-2" id="text-v1.1">
+</div>
+<ul class="org-ul">
+<li><a id="c6a2c68"></a><span class="badge bg-danger">FEAT</span> Sync with directories on your device</li>
+
+<li><a id="7529630"></a><span class="badge bg-danger">FEAT</span> Add options for having a more compact note list</li>
+
+<li><a id="eb813e3"></a><span class="badge bg-primary">IMPR</span> Minor improvements</li>
+</ul>
+</div>
+
+<div id="outline-container-v1.0" class="outline-2">
+<h2 id="v1.0">v1.0</h2>
+<div class="outline-text-2" id="text-v1.0">
+</div>
+<ul class="org-ul">
+<li><a id="80b24fc"></a><span class="badge bg-success">FIX</span> Import chosen notebooks when using some apps</li>
+
+<li><a id="45f312d"></a><span class="badge bg-primary">IMPR</span> Target API 22 (Android 5.1)</li>
+
+<li><a id="f9a73a3"></a><span class="badge bg-success">FIX</span> Fix timestamp parsing in some locales</li>
+
+<li><a id="694fb14"></a><span class="badge bg-danger">FEAT</span> Use <code>.org.txt</code> files too when syncing</li>
+
+<li><a id="6f0478b"></a><span class="badge bg-danger">FEAT</span> Display complete notes in notebooks and search results (new option)</li>
+
+<li><a id="7664e96"></a><span class="badge bg-danger">FEAT</span> Monospaced font for note body and notebook preface (new option)</li>
+
+<li><a id="0b95984"></a><span class="badge bg-danger">FEAT</span> Add Getting Started with Orgzly notebook</li>
+
+<li><a id="f912142"></a><span class="badge bg-danger">FEAT</span> Restart Intros will immediately perform intros on click</li>
+
+<li><a id="1b7b561"></a><span class="badge bg-success">FIX</span> Set Link now displays a currently set link</li>
+
+<li><a id="78bef8b"></a><span class="badge bg-primary">IMPR</span> Various smaller improvements</li>
+
+<li><a id="fba06df"></a><span class="badge bg-danger">FEAT</span> Create new notes above, under or below selected</li>
+
+<li><a id="dce2f03"></a><span class="badge bg-danger">FEAT</span> Keep indentation in notebooks</li>
+
+<li><a id="6ee191f"></a><span class="badge bg-primary">IMPR</span> Change character encoding detection</li>
+
+<li><a id="5c1879e"></a><span class="badge bg-danger">FEAT</span> Display character encoding for each notebook</li>
+
+<li><a id="582ccf5"></a><span class="badge bg-success">FIX</span> Insert previously deleted repo URL</li>
+
+<li><a id="a94dcff"></a><span class="badge bg-danger">FEAT</span> Display repo and notebook URLs for each notebook</li>
+
+<li><a id="315a8fb"></a><span class="badge bg-danger">FEAT</span> Display notebook's file name below title</li>
+
+<li><a id="5fb415f"></a><span class="badge bg-primary">IMPR</span> Few design changes</li>
+
+<li><a id="87043a4"></a><span class="badge bg-danger">FEAT</span> Allow sharing data to Orgzly from other apps</li>
+
+<li><a id="1bdfe79"></a><span class="badge bg-danger">FEAT</span> Support for <code>#+TITLE</code> in preface</li>
+
+<li><a id="29ad596"></a><span class="badge bg-danger">FEAT</span> Select default state for new notes</li>
+
+<li><a id="cd6cc2f"></a><span class="badge bg-success">FIX</span> Mark notes with repeaters as done</li>
+
+<li><a id="12405dd"></a><span class="badge bg-primary">IMPR</span> Change sort order for saved searches</li>
+
+<li><a id="66c1e74"></a><span class="badge bg-primary">IMPR</span> Smaller fixes and improvements</li>
+
+<li><a id="5b7f7e5"></a><span class="badge bg-success">FIX</span> Database-related fix for older devices</li>
+
+<li><a id="80dd175"></a><span class="badge bg-primary">IMPR</span> Display repeater and delay in time stamps</li>
+
+<li><a id="78b1f7d"></a><span class="badge bg-primary">IMPR</span> Remove repeater from timestamp dialog</li>
+
+<li><a id="790c4cb"></a><span class="badge bg-primary">IMPR</span> Remove unused libraries</li>
+
+<li><a id="97c917f"></a><span class="badge bg-primary">IMPR</span> Remove notebook renaming option</li>
+</ul>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container my-3">
+        <div class="row align-items-center">
+            <div class="col text-center">
+                <a class="link-secondary me-4" role="button" href='mailto:support@orgzly.com'><span class="bi-envelope-fill fs-3"></span><span class='visually-hidden'> Email</span></a>
+                <a class="link-secondary mx-4" role="button" href='https://github.com/orgzly'><span class="bi-github fs-3"></span><span class='visually-hidden'> GitHub</span></a>
+                <a class="link-secondary mx-4" role="button" href='https://twitter.com/Orgzly'><span class="bi-twitter fs-3"></span><span class='visually-hidden'> Twitter</span></a>
+                <a class="link-secondary ms-4" role="button" href='https://www.facebook.com/Orgzly'><span class="bi-facebook fs-3"></span><span class='visually-hidden'> Facebook</span></a>
+            </div>
+        </div>
+
+        <div class="row align-items-center mt-3">
+            <div class="col text-center">
+                <a href="/privacy" class="link-secondary text-decoration-none" style="font-size: 0.75rem">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
