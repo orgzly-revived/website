@@ -80,6 +80,7 @@
 <li><a href="#d25f20c">Generated Org files</a></li>
 </ul>
 </li>
+<li><a href="#orgc553add">Ignoring files in a repository</a></li>
 </ul>
 </li>
 <li><a href="#links">Links</a>
@@ -401,6 +402,50 @@ by a new line.</li>
 If any of this is not working for you, please <a href="#contact">contact</a> us.
 </p>
 </div>
+</div>
+</div>
+
+<div id="outline-container-orgc553add" class="outline-3">
+<h3 id="orgc553add">Ignoring files in a repository</h3>
+<div class="outline-text-3" id="text-orgc553add">
+<p>
+(Supported on Android 8 and above.)
+</p>
+
+<p>
+For users who have a large number of .org files in their repository, and only
+want Orgzly to load some of them, a <code>.orgzlyignore</code> file can be
+added to the repository on a remote device. The file uses the same syntax as
+Git's <code>.gitignore</code> file, which lets you exclude or include files
+based on glob patterns. See the <a
+href="https://git-scm.com/docs/gitignore#_pattern_format">Git documentation</a>
+for details on the syntax. If the repository contains a
+<code>.orgzlyignore</code> file, it will be consulted in the following
+situations:
+</p>
+
+<ol class="org-ol">
+<li>When looking through the repository for .org files to load.</li>
+<li>When renaming notebooks.</li>
+<li>When linking a notebook to a repository (to ensure that the resulting file
+    name does not match an ignore rule).</li>
+</ol>
+
+<p>
+Please note that the <code>.orgzlyignore</code> file is not consulted each time
+a notebook is saved to a repository, for performance reasons.
+</p>
+
+<p>
+If the ignore rules are updated such that an existing Orgzly notebook suddenly
+matches an ignore rule, upon the next sync occasion, Orgzly will react as if
+the file has been deleted from the repository. This means that the notebook's
+repository link is removed, and a warning message is shown, but the notebook is
+<b>not</b> deleted from Orgzly. However, you will not be able to link the
+notebook to the same repository, unless you rename it to something which does
+not match an ignore rule. (It would also be possible to link the notebook to a
+different repository, with different or no ignore rules.)
+</p>
 </div>
 </div>
 </div>
