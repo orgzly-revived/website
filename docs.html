@@ -845,10 +845,9 @@ which are tagged with <code>beeblebrox</code>.
 <h3 id="search-sorting">Sorting</h3>
 <div class="outline-text-3" id="text-search-sorting">
 <p>
-Default ordering of notes is by notebook name then priority. If <code>s</code> or
-<code>d</code> are used in the query, they are also sorted by scheduled or
-deadline time. They are always sorted by position in the notebook
-last.
+Default ordering of notes in the search results is by notebook name then priority. If <code>s</code>
+or <code>d</code> are used in the query, they are also sorted by scheduled or deadline time. They are
+always sorted by position in the notebook last. 
 </p>
 
 <p>
@@ -935,24 +934,6 @@ considered when sorting. With <code>o.event</code> the oldest event is used. Wit
 </div>
 </div>
 
-<div id="outline-container-search-agenda" class="outline-3">
-<h3 id="search-agenda">Agenda</h3>
-<div class="outline-text-3" id="text-search-agenda">
-<p>
-You can add <code>ad.DAYS</code> to any query to display search results grouped by day.
-</p>
-
-<p>
-<code>DAYS</code> is a number of days you want to display.
-</p>
-
-<p>
-For example, <code>(t.gym or t.class) ad.3</code> will display notes tagged with
-<code>gym</code> or <code>class</code> with any type of time set within next 3 days.
-</p>
-</div>
-</div>
-
 <div id="outline-container-search-examples" class="outline-3">
 <h3 id="search-examples">Examples</h3>
 <div class="outline-text-3" id="text-search-examples">
@@ -966,6 +947,33 @@ For example, <code>(t.gym or t.class) ad.3</code> will display notes tagged with
 <li><code>p.b</code> - Search for notes with priority <code>B</code> (includes notes with no priority if default priority is <code>B</code>)</li>
 <li><code>ps.b</code> - Search for notes with priority set to <code>B</code></li>
 </ul>
+</div>
+</div>
+
+<div id="outline-container-search-agenda" class="outline-3">
+<h3 id="search-agenda">Agenda</h3>
+<div class="outline-text-3" id="text-search-agenda">
+<p>
+You can add <code>ad.DAYS</code> to any query to display search results grouped by day. This view is
+also known as the agenda view, similar to <code>org-agenda</code> in vanilla Emacs.
+</p>
+
+<p>
+<code>DAYS</code> is a number of days you want to display.
+</p>
+
+<p>
+For example, <code>(t.gym or t.class) ad.3</code> will display notes tagged with
+<code>gym</code> or <code>class</code> with any type of time set within next 3 days.
+</p>
+<p>
+Ordering in the agenda view is different from the regular search view. In the agenda view,
+notes are always sorted chronologically according to their timestamps within each
+day. Timestamps that include a date but no specific time of day will be ordered later in
+the day. For example, <code>&lt;2025-03-30 15:00&gt;</code> comes before <code>&lt;2025-03-30&gt;</code>. When two notes
+have the same timestamps, the ordering will be determined using the same criteria
+described in the <b>Sorting</b> section above.
+</p>
 </div>
 </div>
 
