@@ -48,7 +48,7 @@
 
     <div class="row mt-3">
         <div class="col">
-            <div id="table-of-contents" role="doc-toc">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
@@ -80,7 +80,7 @@
 <li><a href="#d25f20c">Generated Org files</a></li>
 </ul>
 </li>
-<li><a href="#orgc553add">Ignoring files in a repository</a></li>
+<li><a href="#a51773f">Ignoring files in a repository</a></li>
 </ul>
 </li>
 <li><a href="#links">Links</a>
@@ -91,16 +91,26 @@
 <li><a href="#93214ea">Location</a></li>
 <li><a href="#a7a9f79">File</a></li>
 <li><a href="#33542dd">Note</a></li>
-<li><a href="#9d5f3b9">Notebook</a></li>
+<li><a href="#9d5f3b9">Notebook</a>
+<ul>
+<li><a href="#49c8c05">Using the notebook's <code>ID</code> property</a></li>
+<li><a href="#c5b0e4b">Using the notebook's file path</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#search">Search</a>
 <ul>
 <li><a href="#search-expressions">Search expressions</a></li>
 <li><a href="#search-sorting">Sorting</a></li>
-<li><a href="#search-agenda">Agenda</a></li>
 <li><a href="#search-examples">Examples</a></li>
+<li><a href="#search-agenda">Agenda</a></li>
 <li><a href="#b0b0976">Search Results</a></li>
+</ul>
+</li>
+<li><a href="#advanced-features">Advanced Features</a>
+<ul>
+<li><a href="#repeated-tasks">Repeated Tasks</a></li>
 </ul>
 </li>
 <li><a href="#faq">FAQ</a>
@@ -405,46 +415,29 @@ If any of this is not working for you, please <a href="#contact">contact</a> us.
 </div>
 </div>
 
-<div id="outline-container-orgc553add" class="outline-3">
-<h3 id="orgc553add">Ignoring files in a repository</h3>
-<div class="outline-text-3" id="text-orgc553add">
+<div id="outline-container-a51773f" class="outline-3">
+<h3 id="a51773f">Ignoring files in a repository</h3>
+<div class="outline-text-3" id="text-a51773f">
 <p>
 (Supported on Android 8 and above.)
 </p>
 
 <p>
-For users who have a large number of .org files in their repository, and only
-want Orgzly to load some of them, a <code>.orgzlyignore</code> file can be
-added to the repository on a remote device. The file uses the same syntax as
-Git's <code>.gitignore</code> file, which lets you exclude or include files
-based on glob patterns. See the <a
-href="https://git-scm.com/docs/gitignore#_pattern_format">Git documentation</a>
-for details on the syntax. If the repository contains a
-<code>.orgzlyignore</code> file, it will be consulted in the following
-situations:
+For users who have a large number of .org files in their repository, and only want Orgzly to load some of them, a <code>.orgzlyignore</code> file can be added to the repository on a remote device. The file uses the same syntax as Git's <code>.gitignore</code> file, which lets you exclude or include files based on glob patterns. See the <a href="https://git-scm.com/docs/gitignore#_pattern_format">Git documentation</a> for details on the syntax. If the repository contains a <code>.orgzlyignore</code> file, it will be consulted in the following situations:
 </p>
 
 <ol class="org-ol">
 <li>When looking through the repository for .org files to load.</li>
 <li>When renaming notebooks.</li>
-<li>When linking a notebook to a repository (to ensure that the resulting file
-    name does not match an ignore rule).</li>
+<li>When linking a notebook to a repository (to ensure that the resulting file name does not match an ignore rule).</li>
 </ol>
 
 <p>
-Please note that the <code>.orgzlyignore</code> file is not consulted each time
-a notebook is saved to a repository, for performance reasons.
+Please note that the <code>.orgzlyignore</code> file is not consulted each time a notebook is saved to a repository, for performance reasons.
 </p>
 
 <p>
-If the ignore rules are updated such that an existing Orgzly notebook suddenly
-matches an ignore rule, upon the next sync occasion, Orgzly will react as if
-the file has been deleted from the repository. This means that the notebook's
-repository link is removed, and a warning message is shown, but the notebook is
-<b>not</b> deleted from Orgzly. However, you will not be able to link the
-notebook to the same repository, unless you rename it to something which does
-not match an ignore rule. (It would also be possible to link the notebook to a
-different repository, with different or no ignore rules.)
+If the ignore rules are updated such that an existing Orgzly notebook suddenly matches an ignore rule, upon the next sync occasion, Orgzly will react as if the file has been deleted from the repository. This means that the notebook's repository link is removed, and a warning message is shown, but the notebook is <b>not</b> deleted from Orgzly. However, you will not be able to link the notebook to the same repository, unless you rename it to something which does not match an ignore rule. (It would also be possible to link the notebook to a different repository, with different or no ignore rules.)
 </p>
 </div>
 </div>
@@ -568,17 +561,20 @@ using:
 <p>
 <code>[[#Meeting checklist]]</code>
 </p>
-</div>
-</div>
 
+<p>
+Orgzly supports adding IDs to all notes automatically. It is disabled by default but can be enabled in Settings, <i>Notes &amp; Notebooks</i>, the <i>Add ID property</i> under <i>New Note</i>.  
+</p>
+</div>
+</div>
 <div id="outline-container-9d5f3b9" class="outline-3">
 <h3 id="9d5f3b9">Notebook</h3>
 <div class="outline-text-3" id="text-9d5f3b9">
+</div>
 
 <div id="outline-container-49c8c05" class="outline-4">
 <h4 id="49c8c05">Using the notebook's <code>ID</code> property</h4>
 <div class="outline-text-4" id="text-49c8c05">
-
 <p>
 You can link to notebooks by their <code>ID</code> property.
 </p>
@@ -601,7 +597,6 @@ The value of the <code>ID</code> property can be anything, but <a href="https://
 <div id="outline-container-c5b0e4b" class="outline-4">
 <h4 id="c5b0e4b">Using the notebook's file path</h4>
 <div class="outline-text-4" id="text-c5b0e4b">
-
 <p>
 You can link to a notebook within the app just like you would link to an external file:
 </p>
@@ -613,6 +608,7 @@ You can link to a notebook within the app just like you would link to an externa
 <p>
 Only the file name matters, and it has to match the notebook you are linking to.
 </p>
+</div>
 </div>
 </div>
 </div>
@@ -642,7 +638,7 @@ Following search expressions are supported.
 Some of them support <code>.</code> (NOT) operator (see the last column).
 </p>
 
-<table class="table table-sm">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
@@ -864,7 +860,7 @@ specify multiple operators and they will be used in order.
 Following properties are supported:
 </p>
 
-<table class="table table-sm">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
@@ -966,6 +962,7 @@ also known as the agenda view, similar to <code>org-agenda</code> in vanilla Ema
 For example, <code>(t.gym or t.class) ad.3</code> will display notes tagged with
 <code>gym</code> or <code>class</code> with any type of time set within next 3 days.
 </p>
+
 <p>
 Ordering in the agenda view is different from the regular search view. In the agenda view,
 notes are always sorted chronologically according to their timestamps within each
@@ -976,6 +973,7 @@ described in the <b>Sorting</b> section above.
 </p>
 </div>
 </div>
+
 
 <div id="outline-container-b0b0976" class="outline-3">
 <h3 id="b0b0976">Search Results</h3>
@@ -992,6 +990,22 @@ notebook that contains it.
 </div>
 </div>
 
+<div id="outline-container-advanced-features" class="outline-2">
+<h2 id="advanced-features">Advanced Features</h2>
+<div class="outline-text-2" id="text-advanced-features">
+</div>
+<div id="outline-container-repeated-tasks" class="outline-3">
+<h3 id="repeated-tasks">Repeated Tasks</h3>
+<div class="outline-text-3" id="text-repeated-tasks">
+<p>
+You can easily create repeated tasks using <a href="https://orgmode.org/manual/Repeated-tasks.html">the same syntax</a> as in org-mode.
+For example <code>SCHEDULED: &lt;2025-04-30 Wed +1w&gt;</code> is a valid repeated task. Once you change its status to DONE, its state will
+remain the same and won't change to DONE, but its date will move one week ahead, to the next Wednesday.
+</p>
+</div>
+</div>
+</div>
+
 <div id="outline-container-faq" class="outline-2">
 <h2 id="faq">FAQ</h2>
 <div class="outline-text-2" id="text-faq">
@@ -1001,7 +1015,7 @@ notebook that contains it.
 <h3 id="cost">How much does it cost?</h3>
 <div class="outline-text-3" id="text-cost">
 <p>
-Orgzly is free.
+Orgzly Revived is free.
 </p>
 </div>
 </div>
@@ -1062,7 +1076,7 @@ Email us at <a href="mailto:support@orgzlyrevived.com">support@orgzlyrevived.com
 </p>
 
 <p>
-Help us localize Orgzly by joining our <a href="https://crowdin.com/project/orgzly-revived">Crowdin project</a>.
+Help us localize Orgzly Revived by joining our <a href="https://toolate.othing.xyz/projects/orgzly-revived/">Weblate project</a>.
 </p>
 </div>
 </div>
