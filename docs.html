@@ -1039,6 +1039,29 @@ directly from the <a href="https://github.com/orgzly-revived/orgzly-android-revi
 </div>
 </div>
 
+<div id="outline-container-verify-apk-signature" class="outline-2">
+<h2 id="verify-apk-signature">Can I verify the APK signature?</h2>
+<div class="outline-text-2" id="text-verify-apk-signature">
+<p>
+Yes, this is the SHA-256 checksum of our APK signing certificate for verifying your downloaded APK with tools such as <a href="https://github.com/soupslurpr/AppVerifier">AppVerifier</a> or <a href="https://developer.android.com/tools/apksigner">apksigner</a>:
+</p>
+
+<blockquote>
+<p>
+com.orgzlyrevived 6F:C9:C2:E2:2D:07:D2:5C:E7:7E:2E:96:34:55:05:3C:38:B8:31:8A:1A:24:91:B3:ED:95:D5:0C:BA:85:49:3D
+</p>
+</blockquote>
+
+<p>
+You should also check that this checksum matches the one published on <a href="https://github.com/orgzly-revived/orgzly-android-revived?tab=readme-ov-file#verifying-the-apk-signature">GitHub</a>.
+</p>
+
+<p>
+Once you have installed the APK, Android should refuse to update the app to any new version which was not signed by the same private key.
+</p>
+</div>
+</div>
+
 <div id="outline-container-f695589" class="outline-3">
 <h3 id="f695589">Dropbox sync option is missing</h3>
 <div class="outline-text-3" id="text-f695589">
